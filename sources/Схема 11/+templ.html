@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Bootstrap CSS + JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="./css/style.css">
+
+	<title>Заявки от логистов</title>
+</head>
+
+<body>
+	<div class="container-flue">
+		<h1 class="text-end mb-4 mt-4">Заявки от логистов</h1>
+		<form name="form-bar" class="mb-4">
+			<div class="row">
+				<div class="col mb-4">
+					<a href="#" class="btn btn-secondary button-list" role="button">Список заявок</a>
+				</div>
+			</div>
+			<div class="row row-cols-auto">
+				<div class="col">
+					<a href="#" class="btn btn-primary button-g0-1 mb-1" role="button">+</a>
+				</div>
+				<div class="col button-g0">
+					<a href="#" class="btn btn-success button-g0-2 mb-1" role="button">В&nbsp;работе</a>
+					<a href="#" class="btn btn-outline-dark button-g0-3 mb-1" role="button">Выполненные</a>
+					<a href="#" class="btn btn-warning button-g0-4 mb-1" role="button">Список&nbsp;заявок</a>
+				</div>
+			</div>
+		</form>
+
+		<form name="form-table" id="form-table" method="post" enctype="multipart/form-data" class="table-container">
+			<table class="table table-bordered table-hover">
+				<thead class="head-sticky">
+					<tr>
+						<th scope="col" class="col-1">
+							<p>№ Заявки</p>
+						</th>
+						<th scope="col" class="col-2">
+							<p>Откуда</p>
+						</th>
+						<th scope="col" class="col-3">
+							<p>Куда</p>
+						</th>
+						<th scope="col" class="col-4">
+							<p>Цена</p>
+						</th>
+						<th scope="col" class="col-5">
+							<p>Логист</p>
+						</th>
+						<th scope="col" class="col-6">
+							<p>Дата загрузки</p>
+						</th>
+						<th scope="col" class="col-7">
+							<p>Дата выгрузки</p>
+						</th>
+						<th scope="col" class="col-8">
+							<p>Контрагент</p>
+						</th>
+						<th scope="col" class="col-9">
+							<p>Взять заявку</p>
+						</th>
+					</tr>
+				</thead>
+				<tbody class="table__body">
+					<!-- (tr>td>input[name=input-$-1 id=input-$-1]^td>input[name=input-$-2 id=input-$-2]^td>input[name=input-$-3 id=input-$-3]^td>input[name=input-$-4 id=input-$-4]^td>input[name=input-$-5 id=input-$-5]^td>input[name=input-$-6 id=input-$-6]^td>input[name=input-$-7 id=input-$-7]^td>input[name=input-$-8 id=input-$-8]^td>button[type=button name=button-$-1 id=button-$-1]{Взять заявку})*2 -->
+					<tr>
+						<td><input type="text" name="input-1-1" id="input-1-1"></td>
+						<td><input type="text" name="input-1-2" id="input-1-2"></td>
+						<td><input type="text" name="input-1-3" id="input-1-3"></td>
+						<td><input type="text" name="input-1-4" id="input-1-4"></td>
+						<td><input type="text" name="input-1-5" id="input-1-5"></td>
+						<td><input type="text" name="input-1-6" id="input-1-6"></td>
+						<td><input type="text" name="input-1-7" id="input-1-7"></td>
+						<td><input type="text" name="input-1-8" id="input-1-8"></td>
+						<td class="p-1"><button class="btn btn-primary btn-sm" type="button" name="button-1-1" id="button-1-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-2-1" id="input-2-1"></td>
+						<td><input type="text" name="input-2-2" id="input-2-2"></td>
+						<td><input type="text" name="input-2-3" id="input-2-3"></td>
+						<td><input type="text" name="input-2-4" id="input-2-4"></td>
+						<td><input type="text" name="input-2-5" id="input-2-5"></td>
+						<td><input type="text" name="input-2-6" id="input-2-6"></td>
+						<td><input type="text" name="input-2-7" id="input-2-7"></td>
+						<td><input type="text" name="input-2-8" id="input-2-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-2-1" id="button-2-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-3-1" id="input-3-1"></td>
+						<td><input type="text" name="input-3-2" id="input-3-2"></td>
+						<td><input type="text" name="input-3-3" id="input-3-3"></td>
+						<td><input type="text" name="input-3-4" id="input-3-4"></td>
+						<td><input type="text" name="input-3-5" id="input-3-5"></td>
+						<td><input type="text" name="input-3-6" id="input-3-6"></td>
+						<td><input type="text" name="input-3-7" id="input-3-7"></td>
+						<td><input type="text" name="input-3-8" id="input-3-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-3-1" id="button-3-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-4-1" id="input-4-1"></td>
+						<td><input type="text" name="input-4-2" id="input-4-2"></td>
+						<td><input type="text" name="input-4-3" id="input-4-3"></td>
+						<td><input type="text" name="input-4-4" id="input-4-4"></td>
+						<td><input type="text" name="input-4-5" id="input-4-5"></td>
+						<td><input type="text" name="input-4-6" id="input-4-6"></td>
+						<td><input type="text" name="input-4-7" id="input-4-7"></td>
+						<td><input type="text" name="input-4-8" id="input-4-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-4-1" id="button-4-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-5-1" id="input-5-1"></td>
+						<td><input type="text" name="input-5-2" id="input-5-2"></td>
+						<td><input type="text" name="input-5-3" id="input-5-3"></td>
+						<td><input type="text" name="input-5-4" id="input-5-4"></td>
+						<td><input type="text" name="input-5-5" id="input-5-5"></td>
+						<td><input type="text" name="input-5-6" id="input-5-6"></td>
+						<td><input type="text" name="input-5-7" id="input-5-7"></td>
+						<td><input type="text" name="input-5-8" id="input-5-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-5-1" id="button-5-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-6-1" id="input-6-1"></td>
+						<td><input type="text" name="input-6-2" id="input-6-2"></td>
+						<td><input type="text" name="input-6-3" id="input-6-3"></td>
+						<td><input type="text" name="input-6-4" id="input-6-4"></td>
+						<td><input type="text" name="input-6-5" id="input-6-5"></td>
+						<td><input type="text" name="input-6-6" id="input-6-6"></td>
+						<td><input type="text" name="input-6-7" id="input-6-7"></td>
+						<td><input type="text" name="input-6-8" id="input-6-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-6-1" id="button-6-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-7-1" id="input-7-1"></td>
+						<td><input type="text" name="input-7-2" id="input-7-2"></td>
+						<td><input type="text" name="input-7-3" id="input-7-3"></td>
+						<td><input type="text" name="input-7-4" id="input-7-4"></td>
+						<td><input type="text" name="input-7-5" id="input-7-5"></td>
+						<td><input type="text" name="input-7-6" id="input-7-6"></td>
+						<td><input type="text" name="input-7-7" id="input-7-7"></td>
+						<td><input type="text" name="input-7-8" id="input-7-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-7-1" id="button-7-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-8-1" id="input-8-1"></td>
+						<td><input type="text" name="input-8-2" id="input-8-2"></td>
+						<td><input type="text" name="input-8-3" id="input-8-3"></td>
+						<td><input type="text" name="input-8-4" id="input-8-4"></td>
+						<td><input type="text" name="input-8-5" id="input-8-5"></td>
+						<td><input type="text" name="input-8-6" id="input-8-6"></td>
+						<td><input type="text" name="input-8-7" id="input-8-7"></td>
+						<td><input type="text" name="input-8-8" id="input-8-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-8-1" id="button-8-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-9-1" id="input-9-1"></td>
+						<td><input type="text" name="input-9-2" id="input-9-2"></td>
+						<td><input type="text" name="input-9-3" id="input-9-3"></td>
+						<td><input type="text" name="input-9-4" id="input-9-4"></td>
+						<td><input type="text" name="input-9-5" id="input-9-5"></td>
+						<td><input type="text" name="input-9-6" id="input-9-6"></td>
+						<td><input type="text" name="input-9-7" id="input-9-7"></td>
+						<td><input type="text" name="input-9-8" id="input-9-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-9-1" id="button-9-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-10-1" id="input-10-1"></td>
+						<td><input type="text" name="input-10-2" id="input-10-2"></td>
+						<td><input type="text" name="input-10-3" id="input-10-3"></td>
+						<td><input type="text" name="input-10-4" id="input-10-4"></td>
+						<td><input type="text" name="input-10-5" id="input-10-5"></td>
+						<td><input type="text" name="input-10-6" id="input-10-6"></td>
+						<td><input type="text" name="input-10-7" id="input-10-7"></td>
+						<td><input type="text" name="input-10-8" id="input-10-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-10-1" id="button-10-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-11-1" id="input-11-1"></td>
+						<td><input type="text" name="input-11-2" id="input-11-2"></td>
+						<td><input type="text" name="input-11-3" id="input-11-3"></td>
+						<td><input type="text" name="input-11-4" id="input-11-4"></td>
+						<td><input type="text" name="input-11-5" id="input-11-5"></td>
+						<td><input type="text" name="input-11-6" id="input-11-6"></td>
+						<td><input type="text" name="input-11-7" id="input-11-7"></td>
+						<td><input type="text" name="input-11-8" id="input-11-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-11-1" id="button-11-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-12-1" id="input-12-1"></td>
+						<td><input type="text" name="input-12-2" id="input-12-2"></td>
+						<td><input type="text" name="input-12-3" id="input-12-3"></td>
+						<td><input type="text" name="input-12-4" id="input-12-4"></td>
+						<td><input type="text" name="input-12-5" id="input-12-5"></td>
+						<td><input type="text" name="input-12-6" id="input-12-6"></td>
+						<td><input type="text" name="input-12-7" id="input-12-7"></td>
+						<td><input type="text" name="input-12-8" id="input-12-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-12-1" id="button-12-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-13-1" id="input-13-1"></td>
+						<td><input type="text" name="input-13-2" id="input-13-2"></td>
+						<td><input type="text" name="input-13-3" id="input-13-3"></td>
+						<td><input type="text" name="input-13-4" id="input-13-4"></td>
+						<td><input type="text" name="input-13-5" id="input-13-5"></td>
+						<td><input type="text" name="input-13-6" id="input-13-6"></td>
+						<td><input type="text" name="input-13-7" id="input-13-7"></td>
+						<td><input type="text" name="input-13-8" id="input-13-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-13-1" id="button-13-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-14-1" id="input-14-1"></td>
+						<td><input type="text" name="input-14-2" id="input-14-2"></td>
+						<td><input type="text" name="input-14-3" id="input-14-3"></td>
+						<td><input type="text" name="input-14-4" id="input-14-4"></td>
+						<td><input type="text" name="input-14-5" id="input-14-5"></td>
+						<td><input type="text" name="input-14-6" id="input-14-6"></td>
+						<td><input type="text" name="input-14-7" id="input-14-7"></td>
+						<td><input type="text" name="input-14-8" id="input-14-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-14-1" id="button-14-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-15-1" id="input-15-1"></td>
+						<td><input type="text" name="input-15-2" id="input-15-2"></td>
+						<td><input type="text" name="input-15-3" id="input-15-3"></td>
+						<td><input type="text" name="input-15-4" id="input-15-4"></td>
+						<td><input type="text" name="input-15-5" id="input-15-5"></td>
+						<td><input type="text" name="input-15-6" id="input-15-6"></td>
+						<td><input type="text" name="input-15-7" id="input-15-7"></td>
+						<td><input type="text" name="input-15-8" id="input-15-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-15-1" id="button-15-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-16-1" id="input-16-1"></td>
+						<td><input type="text" name="input-16-2" id="input-16-2"></td>
+						<td><input type="text" name="input-16-3" id="input-16-3"></td>
+						<td><input type="text" name="input-16-4" id="input-16-4"></td>
+						<td><input type="text" name="input-16-5" id="input-16-5"></td>
+						<td><input type="text" name="input-16-6" id="input-16-6"></td>
+						<td><input type="text" name="input-16-7" id="input-16-7"></td>
+						<td><input type="text" name="input-16-8" id="input-16-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-16-1" id="button-16-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-17-1" id="input-17-1"></td>
+						<td><input type="text" name="input-17-2" id="input-17-2"></td>
+						<td><input type="text" name="input-17-3" id="input-17-3"></td>
+						<td><input type="text" name="input-17-4" id="input-17-4"></td>
+						<td><input type="text" name="input-17-5" id="input-17-5"></td>
+						<td><input type="text" name="input-17-6" id="input-17-6"></td>
+						<td><input type="text" name="input-17-7" id="input-17-7"></td>
+						<td><input type="text" name="input-17-8" id="input-17-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-17-1" id="button-17-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-18-1" id="input-18-1"></td>
+						<td><input type="text" name="input-18-2" id="input-18-2"></td>
+						<td><input type="text" name="input-18-3" id="input-18-3"></td>
+						<td><input type="text" name="input-18-4" id="input-18-4"></td>
+						<td><input type="text" name="input-18-5" id="input-18-5"></td>
+						<td><input type="text" name="input-18-6" id="input-18-6"></td>
+						<td><input type="text" name="input-18-7" id="input-18-7"></td>
+						<td><input type="text" name="input-18-8" id="input-18-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-18-1" id="button-18-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-19-1" id="input-19-1"></td>
+						<td><input type="text" name="input-19-2" id="input-19-2"></td>
+						<td><input type="text" name="input-19-3" id="input-19-3"></td>
+						<td><input type="text" name="input-19-4" id="input-19-4"></td>
+						<td><input type="text" name="input-19-5" id="input-19-5"></td>
+						<td><input type="text" name="input-19-6" id="input-19-6"></td>
+						<td><input type="text" name="input-19-7" id="input-19-7"></td>
+						<td><input type="text" name="input-19-8" id="input-19-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-19-1" id="button-19-1">Взять&nbsp;заявку</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="input-20-1" id="input-20-1"></td>
+						<td><input type="text" name="input-20-2" id="input-20-2"></td>
+						<td><input type="text" name="input-20-3" id="input-20-3"></td>
+						<td><input type="text" name="input-20-4" id="input-20-4"></td>
+						<td><input type="text" name="input-20-5" id="input-20-5"></td>
+						<td><input type="text" name="input-20-6" id="input-20-6"></td>
+						<td><input type="text" name="input-20-7" id="input-20-7"></td>
+						<td><input type="text" name="input-20-8" id="input-20-8"></td>
+						<td class="p-1"><button  class="btn btn-primary btn-sm" type="button" name="button-20-1" id="button-20-1">Взять&nbsp;заявку</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

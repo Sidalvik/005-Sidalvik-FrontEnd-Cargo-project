@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/report__1-1.css">
+  <title>Ежедневный отчёт начальника автоколонны</title>
+</head>
+<body>
+  <div class="container">
+    <div class="report-title">
+        <p>Отчёт на "_<output name="day-report"></output>_"__<output name="month-report"></output>___2022г.  </p>
+    </div>
+
+    <!-- table 1 -->
+    <form name="form__table__1" class="form__table__1">
+      <table class="table__1">
+        <caption></caption>
+        <colgroup class="colgroup-1">
+          <col class="col-1-1">
+          <col class="col-1-2">
+        </colgroup>
+        <colgroup class="colgroup-2">
+          <col class="col-2-1">
+          <col class="col-2-2">
+        </colgroup>
+          <thead>
+          <tr>
+            <td colspan="2">
+              Начальник автоколонны №&nbsp;<input type="text" name="table-1__input-1" class="table-1__input-1" style="border-bottom: 1px solid; font: inherit;" maxlength="20">
+            </td>
+            <td colspan="2"><input type="text" name="table-1__input-2" class="table-1__input-2" placeholder="Ф.И.О."></td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Численность машин:</td>
+            <td><input type="number" name="table__1__input-1-1" id="table__1__input-1-1" min="0"></td>
+            <td>Численность водителей:</td>
+            <td><input type="number" name="table__1__input-1-2" id="table__1__input-1-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Суточный пробег колонны(км):</td>
+            <td><input type="number" name="table__1__input-2-1" id="table__1__input-2-1" min="0"></td>
+            <td>Фактический коэф.комплектности</td>
+            <td><input type="number" name="table__1__input-2-2" id="table__1__input-2-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Пробег за период:</td>
+            <td><input type="number" name="table__1__input-3-1" id="table__1__input-3-1" min="0"></td>
+            <td>Требуемое кол-во водителей</td>
+            <td><input type="number" name="table__1__input-3-2" id="table__1__input-3-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Суточный рем.фонд (руб.):</td>
+            <td><input type="number" name="table__1__input-4-1" id="table__1__input-4-1" min="0"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+          <tr>
+            <td>Рем.фонд за период:</td>
+            <td><input type="number" name="table__1__input-4-2" id="table__1__input-4-2" min="0"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+
+    <!-- table 2 -->
+    <form name="form__table__2" class="form__table__2">
+      <table class="table__2">
+        <caption>
+          Таксировка
+        </caption>
+        <colgroup class="colgroup-1">
+          <col class="col-1-1">
+          <col class="col-1-2">
+        </colgroup>
+        <colgroup class="colgroup-2">
+          <col class="col-2-1">
+          <col class="col-2-2">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td colspan="2" class="subtitle">Машины (статусы)</td>
+            <td colspan="2" class="subtitle">Водители (статусы)</td>
+          </tr>
+          <tr>
+            <td class="subtitle-marked">В рейсе (с путевыми листами)</td>
+            <td><input type="number" name="table__2__input-1-1" id="table__2__input-1-1" min="0"></td>
+            <td class="subtitle-marked">В рейсе (с путевыми листами)</td>
+            <td><input type="number" name="table__2__input-1-2" id="table__2__input-1-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>На линии</td>
+            <td><input type="number" name="table__2__input-2-1" id="table__2__input-2-1" min="0"></td>
+            <td>На линии</td>
+            <td><input type="number" name="table__2__input-2-2" id="table__2__input-2-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Ремонт (на линии)</td>
+            <td><input type="number" name="table__2__input-3-1" id="table__2__input-3-1" min="0"></td>
+            <td>На линии с чужой колонны</td>
+            <td><input type="number" name="table__2__input-3-2" id="table__2__input-3-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Машина встала (критический ремонт)</td>
+            <td><input type="number" name="table__2__input-4-1" id="table__2__input-4-1" min="0"></td>
+            <td>На линии в чужой колонне</td>
+            <td><input type="number" name="table__2__input-4-2" id="table__2__input-4-2" min="0"></td>
+          </tr>
+
+          <tr>
+            <td>Ремонт ХОУ (использовать без режима)</td>
+            <td><input type="number" name="table__2__input-5-1" id="table__2__input-5-1" min="0"></td>
+            <td class="subtitle-marked">Не в рейсе (без путевых листов)</td>
+            <td><input type="number" name="table__2__input-5-2" id="table__2__input-5-2" min="0"></td>
+          </tr>
+          <tr>
+            <td class="subtitle-marked">Не в рейсе (без путевых листов)</td>
+            <td><input type="number" name="table__2__input-6-1" id="table__2__input-6-1" min="0"></td>
+            <td>Выходной</td>
+            <td><input type="number" name="table__2__input-6-2" id="table__2__input-6-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Встала по ДТП (Челны)</td>
+            <td><input type="number" name="table__2__input-7-1" id="table__2__input-7-1" min="0"></td>
+            <td>Больничный</td>
+            <td><input type="number" name="table__2__input-7-2" id="table__2__input-7-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Встала по ДТП (Омск)</td>
+            <td><input type="number" name="table__2__input-8-1" id="table__2__input-8-1" min="0"></td>
+            <td>Отпуск</td>
+            <td><input type="number" name="table__2__input-8-2" id="table__2__input-8-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Встала по ДТП (Иркутск)</td>
+            <td><input type="number" name="table__2__input-9-1" id="table__2__input-9-1" min="0"></td>
+            <td>Прогул</td>
+            <td><input type="number" name="table__2__input-9-2" id="table__2__input-9-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Ремонт (нельзя грузить)</td>
+            <td><input type="number" name="table__2__input-10-1" id="table__2__input-10-1" min="0"></td>
+            <td>Административный</td>
+            <td><input type="number" name="table__2__input-10-2" id="table__2__input-10-2" min="0"></td>
+          </tr>
+          <tr>
+            <td>Без водителя (Челны)</td>
+            <td><input type="number" name="table__2__input-11-1" id="table__2__input-11-1" min="0"></td>
+            <td class="subfooter">Итого</td>
+            <td class="subfooter"><input type="number" name="table__2__input-11-2" id="table__2__input-11-2" min="0" readonly></td>
+          </tr>
+          <tr>
+            <td>Без водителя (Омск)</td>
+            <td><input type="number" name="table__2__input-12-1" id="table__2__input-12-1" min="0"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+          <tr>
+            <td>Без водителя (Иркутск)</td>
+            <td><input type="number" name="table__2__input-13-1" id="table__2__input-13-1" min="0"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+          <tr>
+            <td>Водитель отдыхает(Челны)</td>
+            <td><input type="number" name="table__2__input-14-1" id="table__2__input-14-1" min="0"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+          <tr>
+            <td>Водитель отдыхает(Омск)</td>
+            <td><input type="number" name="table__2__input-15-1" id="table__2__input-15-1" min="0"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+          <tr>
+            <td>Водитель отдыхает(Иркутск)</td>
+            <td><input type="number" name="table__2__input-16-1" id="table__2__input-16-1" min="0"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+          <tr>
+            <td class="subfooter">Итого:</td>
+            <td class="subfooter"><input type="number" name="table__2__input-17-1" id="table__2__input-17-1" min="0" readonly></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+          <tr>
+            <td class="subfooter">коэф.технической готовности:</td>
+            <td class="subfooter"><input type="number" name="table__2__input-18-1" id="table__2__input-18-1" min="0" readonly></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+          <tr>
+            <td class="subfooter">Коэф. выпуска:</td>
+            <td class="subfooter"><input type="number" name="table__2__input-19-1" id="table__2__input-19-1" min="0" readonly></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+
+    <!-- table 3 -->
+    <form name="form__table__3" class="form__table__3">
+      <table class="table__3">
+        <caption>
+          Детализация
+        </caption>
+        <col class="col-3-1">
+        <col class="col-3-2">
+        <col class="col-3-3">
+        <col class="col-3-4">
+        <col class="col-3-5">
+        <col class="col-3-6">
+        <tbody>
+          <tr>
+            <td colspan="6" class="subtitle">Машины</td>
+          </tr>
+          <tr class="subtitle">
+            <td>№ п/п</td>
+            <td>Гос №</td>
+            <td>Начало (дата и время создания статуса</td>
+            <td>Конец</td>
+            <td>Статус</td>
+            <td>Комментарий</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><input type="text" name="table__3__input-1-1" id="table__3__input-1-1"></td>
+            <td><input type="datetime" name="table__3__input-1-2" id="table__3__input-1-2"></td>
+            <td><input type="datetime" name="table__3__input-1-3" id="table__3__input-1-3"></td>
+            <td>Ремонт (можно грузить)</td>
+            <td><textarea name="table__3__input-1-4" id="table__3__input-1-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><input type="text" name="table__3__input-2-1" id="table__3__input-2-1"></td>
+            <td><input type="datetime" name="table__3__input-2-2" id="table__3__input-2-2"></td>
+            <td><input type="datetime" name="table__3__input-2-3" id="table__2__input-2-3"></td>
+            <td>Машина встала (критический ремонт)</td>
+            <td><textarea name="table__3__input-2-4" id="table__3__input-2-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><input type="text" name="table__3__input-3-1" id="table__3__input-3-1"></td>
+            <td><input type="datetime" name="table__3__input-3-2" id="table__3__input-3-2"></td>
+            <td><input type="datetime" name="table__3__input-3-3" id="table__3__input-3-3"></td>
+            <td>Ремонт ХОУ (использовать без режима)</td>
+            <td><textarea name="table__3__input-3-4" id="table__3__input-3-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><input type="text" name="table__3__input-4-1" id="table__3__input-4-1"></td>
+            <td><input type="datetime" name="table__3__input-4-2" id="table__3__input-4-2"></td>
+            <td><input type="datetime" name="table__3__input-4-3" id="table__3__input-4-3"></td>
+            <td>Встала по ДТП (Челны)</td>
+            <td><textarea name="table__3__input-4-4" id="table__3__input-4-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><input type="text" name="table__3__input-5-1" id="table__3__input-5-1"></td>
+            <td><input type="datetime" name="table__3__input-5-2" id="table__3__input-5-2"></td>
+            <td><input type="datetime" name="table__3__input-5-3" id="table__3__input-5-3"></td>
+            <td>Ремонт (нельзя грузить)</td>
+            <td><textarea name="table__3__input-5-4" id="table__3__input-5-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><input type="text" name="table__3__input-6-1" id="table__3__input-6-1"></td>
+            <td><input type="datetime" name="table__3__input-6-2" id="table__3__input-6-2"></td>
+            <td><input type="datetime" name="table__3__input-6-3" id="table__3__input-6-3"></td>
+            <td>Без водителя (Омск)</td>
+            <td><textarea name="table__3__input-6-4" id="table__3__input-6-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><input type="text" name="table__3__input-7-1" id="table__3__input-7-1"></td>
+            <td><input type="datetime" name="table__3__input-7-2" id="table__3__input-7-2"></td>
+            <td><input type="datetime" name="table__3__input-7-3" id="table__3__input-7-3"></td>
+            <td>Водитель отдыхает (Челны)</td>
+            <td><textarea name="table__3__input-7-4" id="table__3__input-7-4"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="6" class="subtitle">Водители</td>
+          </tr>
+          <tr class="subtitle">
+            <td>№ п/п</td>
+            <td>Ф.И.О.</td>
+            <td>Начало (дата и время создания статуса</td>
+            <td>Конец</td>
+            <td>Статус</td>
+            <td>Комментарий</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><input type="text" name="table__3__input-8-1" id="table__3__input-8-1"></td>
+            <td><input type="datetime" name="table__3__input-8-2" id="table__3__input-8-2"></td>
+            <td><input type="datetime" name="table__3__input-8-3" id="table__3__input-8-3"></td>
+            <td>Выходной</td>
+            <td><textarea name="table__3__input-8-4" id="table__3__input-8-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><input type="text" name="table__3__input-9-1" id="table__3__input-9-1"></td>
+            <td><input type="datetime" name="table__3__input-9-2" id="table__3__input-9-2"></td>
+            <td><input type="datetime" name="table__3__input-9-3" id="table__3__input-9-3"></td>
+            <td>Больничный</td>
+            <td><textarea name="table__3__input-9-4" id="table__3__input-9-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><input type="text" name="table__3__input-10-1" id="table__3__input-10-1"></td>
+            <td><input type="datetime" name="table__3__input-10-2" id="table__3__input-10-2"></td>
+            <td><input type="datetime" name="table__3__input-10-3" id="table__3__input-10-3"></td>
+            <td>Отпуск</td>
+            <td><textarea name="table__3__input-10-4" id="table__3__input-10-4"></textarea></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><input type="text" name="table__3__input-11-1" id="table__3__input-11-1"></td>
+            <td><input type="datetime" name="table__3__input-11-2" id="table__3__input-11-2"></td>
+            <td><input type="datetime" name="table__3__input-11-3" id="table__3__input-11-3"></td>
+            <td>Прогул</td>
+            <td><textarea name="table__3__input-11-4" id="table__3__input-11-4"></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+  </div>
+
+
+</body>
+</html>

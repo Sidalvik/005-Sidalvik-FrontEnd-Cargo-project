@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Осмотр повреждений</title>
+		          <!-- Bootstrap CSS + JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="container-fluid mx-auto">
+		<h1 class="h5 text-center mb-2">Осмотр повреждений</h1>
+		<form name="form__2-12" class="w-100 form__2-12" method="post" enctype="multipart/form-data">
+			<div class="input-group">
+				<input type="text" name="form__2-12__input-1" id="form__2-12__input-1" class="form-control bg-warning text-center form__2-12__input " placeholder="н 320 ук716rus" disabled>
+			</div>
+			<div class="input-group">
+				<input type="text" name="form__2-12__input-2" id="form__2-12__input-2" class="form-control bg-warning text-center form__2-12__input" placeholder="8088 AA" disabled>
+			</div>
+			<div class="input-group">
+				<input type="text" name="form__2-12__input-3" id="form__2-12__input-3" class="form-control text-center form__2-12__input" placeholder="" disabled>
+			</div>
+
+			<div class="d-grid gap-2 mt-2">
+				<button class="btn btn-primary btn-block dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-truck" aria-expanded="true" aria-controls="collapse-truck">Тягач</button>
+				<div class="collapse show" id="collapse-truck">
+					<div class="card card-body" role="list">
+						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-track-1" aria-expanded="false" aria-controls="collapse-track-1">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-1" >
+							<label for="truckCheck-1" class="form-check-label">1. Трещина на лобовом стекле</label>
+						</div>
+
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-2" aria-expanded="false" aria-controls="collapse-track-2">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-2" >
+							<label for="truckCheck-2" class="form-check-label">2. Скол на лобовом стекле</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-3" aria-expanded="false" aria-controls="collapse-track-3">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-3">
+							<label for="truckCheck-3" class="form-check-label">3. Нет защитных сеток фар</label>
+						</div>
+						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-track-4" aria-expanded="false" aria-controls="collapse-track-4">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-4">
+							<label for="truckCheck-4" class="form-check-label">4. Вмятина на правом баке</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-5" aria-expanded="false" aria-controls="collapse-track-5">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-5">
+							<label for="truckCheck-5" class="form-check-label">5. Вмятина на левом баке</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-6" aria-expanded="false" aria-controls="collapse-track-6">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-6">
+							<label for="truckCheck-6" class="form-check-label">6. Шины на ведущей оси</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-7" aria-expanded="false" aria-controls="collapse-track-7">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-7">
+							<label for="truckCheck-7" class="form-check-label">7. Повреждение бампера с правой стороны</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-8" aria-expanded="false" aria-controls="collapse-track-8">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-8">
+							<label for="truckCheck-8" class="form-check-label">8. Повреждение бампера с левой стороны</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-9" aria-expanded="false" aria-controls="collapse-track-9">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-9">
+							<label for="truckCheck-9" class="form-check-label">9. Повреждено бордюрное зеркало</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-10" aria-expanded="false" aria-controls="collapse-track-10">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-10">
+							<label for="truckCheck-10" class="form-check-label">10. Поврежден корпус правого зеркала</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-11" aria-expanded="false" aria-controls="collapse-track-11">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-11">
+							<label for="truckCheck-11" class="form-check-label">11. Поврежден корпус левого зеркала</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-12" aria-expanded="false" aria-controls="collapse-track-12">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-12">
+							<label for="truckCheck-12" class="form-check-label">12. Повреждено стекло левого ПТФ</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-13" aria-expanded="false" aria-controls="collapse-track-13">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-13">
+							<label for="truckCheck-13" class="form-check-label">13. Повреждено стекло правого ПТФ</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-14" aria-expanded="false" aria-controls="collapse-track-14">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-14">
+							<label for="truckCheck-14" class="form-check-label">14. Повреждено стекло левой фары</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-15" aria-expanded="false" aria-controls="collapse-track-15">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-15">
+							<label for="truckCheck-15" class="form-check-label">15. Повреждено стекло правой фары</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-16" aria-expanded="false" aria-controls="collapse-track-16">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-16">
+							<label for="truckCheck-16" class="form-check-label">16. Нечитаемый гос.номер</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-17" aria-expanded="false" aria-controls="collapse-track-17">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-17">
+							<label for="truckCheck-17" class="form-check-label">17. Поврежден гос.номер</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-18" aria-expanded="false" aria-controls="collapse-track-18">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-18">
+							<label for="truckCheck-18" class="form-check-label">18. Повреждена левая подножка</label>
+						</div>
+						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-track-19" aria-expanded="false" aria-controls="collapse-track-19">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-19">
+							<label for="truckCheck-19" class="form-check-label">19. Повреждена правая подножка</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-20" aria-expanded="false" aria-controls="collapse-track-20">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-20">
+							<label for="truckCheck-20" class="form-check-label">20. Поврежден бамбер</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-21" aria-expanded="false" aria-controls="collapse-track-21">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-21">
+							<label for="truckCheck-21" class="form-check-label">21. Повреждена юбка бамбера</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-22" aria-expanded="false" aria-controls="collapse-track-22">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-22">
+							<label for="truckCheck-22" class="form-check-label">22. Поврежден верхний козырек</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-23" aria-expanded="false" aria-controls="collapse-track-23">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-23">
+							<label for="truckCheck-23" class="form-check-label">23. Неисправен задний правый фонарь</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-24" aria-expanded="false" aria-controls="collapse-track-24">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-24">
+							<label for="truckCheck-24" class="form-check-label">24. Неисправен задний левый фонарь</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-25" aria-expanded="false" aria-controls="collapse-track-25">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-25">
+							<label for="truckCheck-25" class="form-check-label">25. Повреждено заднее правое крыло</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-26" aria-expanded="false" aria-controls="collapse-track-26">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-26">
+							<label for="truckCheck-26" class="form-check-label">26. Повреждено заднее левое крыло</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-27" aria-expanded="false" aria-controls="collapse-track-27">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-27">
+							<label for="truckCheck-27" class="form-check-label">27. Нет накладки спойлера</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-28" aria-expanded="false" aria-controls="collapse-track-28">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-28">
+							<label for="truckCheck-28" class="form-check-label">28. Поврежден правый дефлектор</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-29" aria-expanded="false" aria-controls="collapse-track-29">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-29">
+							<label for="truckCheck-29" class="form-check-label">29. Поврежден левый дефлектор</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-30" aria-expanded="false" aria-controls="collapse-track-30">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-30">
+							<label for="truckCheck-30" class="form-check-label">30. Повреждена решетка капота</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-31" aria-expanded="false" aria-controls="collapse-track-31">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-31">
+							<label for="truckCheck-31" class="form-check-label">31. Потемнел отражатель правой фары</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-32" aria-expanded="false" aria-controls="collapse-track-32">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-32">
+							<label for="truckCheck-32" class="form-check-label">32. Потемнел отражатель левой фары</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-33" aria-expanded="false" aria-controls="collapse-track-33">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-33">
+							<label for="truckCheck-33" class="form-check-label">33. Потемнел отражатель правой ПТФ</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-track-34" aria-expanded="false" aria-controls="collapse-track-34">
+							<input type="checkbox" class="form-check-input" value="" id="truckCheck-34">
+							<label for="truckCheck-34" class="form-check-label">34. Потемнел отражатель левой ПТФ</label>
+						</div>
+
+						<div class="btn-group dropup mt-3">
+							<button class="btn btn-outline-primary btn-block dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-truck" aria-expanded="false" aria-controls="collapse-truck">Тягач</button>
+						</div>
+				  </div>
+				</div>
+				<div class="collapse" id="collapse-track-1">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">1. Трещина на лобовом стекле </p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-1" name="inputFile-track-1" multiple>
+				 			<label for="inputFile-track-1" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-2">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">2. Скол на лобовом стекле </p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-2" name="inputFile-track-2" multiple>
+				 			<label for="inputFile-track-2" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-3">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">3. Нет защитных сеток фар</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-3" name="inputFile-track-3" multiple>
+				 			<label for="inputFile-track-3" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-4">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">4. Вмятина на правом баке</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-4" name="inputFile-track-4" multiple>
+				 			<label for="inputFile-track-4" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-5">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">5. Вмятина на левом баке</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-5" name="inputFile-track-5" multiple>
+				 			<label for="inputFile-track-5" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-6">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">6. Шины на ведущей оси</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-6" name="inputFile-track-6" multiple>
+				 			<label for="inputFile-track-6" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-7">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">7. Повреждение бампера с правой стороны</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-7" name="inputFile-track-7" multiple>
+				 			<label for="inputFile-track-7" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-8">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">8. Повреждение бампера с левой стороны</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-8" name="inputFile-track-8" multiple>
+				 			<label for="inputFile-track-8" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-9">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">9. Повреждено бордюрное зеркало</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-9" name="inputFile-track-9" multiple>
+				 			<label for="inputFile-track-9" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-10">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">10. Поврежден корпус правого зеркала</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-10" name="inputFile-track-10" multiple>
+				 			<label for="inputFile-track-10" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-11">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">11. Поврежден корпус левого зеркала</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-11" name="inputFile-track-11" multiple><label for="inputFile-track-11" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-12">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">12. Повреждено стекло левого ПТФ</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-12" name="inputFile-track-12" multiple><label for="inputFile-track-12" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-13">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">13. Повреждено стекло правого ПТФ</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-13" name="inputFile-track-13" multiple><label for="inputFile-track-13" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-14">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">14. Повреждено стекло левой фары</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-14" name="inputFile-track-14" multiple><label for="inputFile-track-14" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-15">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">15. Повреждено стекло правой фары</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-15" name="inputFile-track-15" multiple><label for="inputFile-track-15" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-16">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">16. Нечитаемый гос.номер</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-16" name="inputFile-track-16" multiple><label for="inputFile-track-16" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-17">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">17. Поврежден гос.номер</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-17" name="inputFile-track-17" multiple><label for="inputFile-track-17" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-18">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">18. Повреждена левая подножка</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-18" name="inputFile-track-18" multiple><label for="inputFile-track-18" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-19">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">19. Повреждена правая подножка</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-19" name="inputFile-track-19" multiple><label for="inputFile-track-19" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-20">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">20. Поврежден бамбер</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-20" name="inputFile-track-20" multiple><label for="inputFile-track-20" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-21">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">21. Повреждена юбка бамбера</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-21" name="inputFile-track-21" multiple><label for="inputFile-track-21" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-22">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">22. Поврежден верхний козырек</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-22" name="inputFile-track-22" multiple><label for="inputFile-track-22" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-23">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">23. Неисправен задний правый фонарь</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-23" name="inputFile-track-23" multiple><label for="inputFile-track-23" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-24">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">24. Неисправен задний левый фонарь</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-24" name="inputFile-track-24" multiple><label for="inputFile-track-24" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-25">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">25. Повреждено заднее правое крыло</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-25" name="inputFile-track-25" multiple><label for="inputFile-track-25" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-26">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">26. Повреждено заднее левое крыло</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-26" name="inputFile-track-26" multiple><label for="inputFile-track-26" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-27">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">27. Нет накладки спойлера</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-27" name="inputFile-track-27" multiple><label for="inputFile-track-27" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-28">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">28. Поврежден правый дефлектор</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-28" name="inputFile-track-28" multiple><label for="inputFile-track-28" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-29">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">29. Поврежден левый дефлектор</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-29" name="inputFile-track-29" multiple><label for="inputFile-track-29" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-30">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">30. Повреждена решетка капота</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-30" name="inputFile-track-30" multiple><label for="inputFile-track-30" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-31">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">31. Потемнел отражатель правой фары</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-31" name="inputFile-track-31" multiple><label for="inputFile-track-31" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-32">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">32. Потемнел отражатель левой фары</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-32" name="inputFile-track-32" multiple><label for="inputFile-track-32" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-33">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">33. Потемнел отражатель правой ПТФ</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-33" name="inputFile-track-33" multiple><label for="inputFile-track-33" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-track-34">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">34. Потемнел отражатель левой ПТФ</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-track-34" name="inputFile-track-34" multiple><label for="inputFile-track-34" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+
+				<!-- -ППЦ- -->
+				<button class="btn btn-primary btn-block dropdown-toggle mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-trailer" aria-expanded="false" aria-controls="collapse-trailer">ППЦ</button>
+				<div class="collapse" id="collapse-trailer">
+					<div class="card card-body" role="list">
+						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-trailer-1" aria-expanded="false" aria-controls="collapse-trailer-1">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-1" >
+							<label for="trailerCheck-1" class="form-check-label">1. Поврежден тент с правой стороны</label>
+						</div>
+
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-2" aria-expanded="false" aria-controls="collapse-trailer-2">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-2" >
+							<label for="trailerCheck-2" class="form-check-label">2. Поврежден тент с левой стороны</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-3" aria-expanded="false" aria-controls="collapse-trailer-3">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-3">
+							<label for="trailerCheck-3" class="form-check-label">3. Поврежден правый отбойник</label>
+						</div>
+						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-trailer-4" aria-expanded="false" aria-controls="collapse-trailer-4">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-4">
+							<label for="trailerCheck-4" class="form-check-label">4. Поврежден левый отбойник</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-5" aria-expanded="false" aria-controls="collapse-trailer-5">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-5">
+							<label for="trailerCheck-5" class="form-check-label">5. Поврежден боковой габарит с правой стороны</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-6" aria-expanded="false" aria-controls="collapse-trailer-6">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-6">
+							<label for="trailerCheck-6" class="form-check-label">6. Поврежден боковой габарит с левой стороны</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-7" aria-expanded="false" aria-controls="collapse-trailer-7">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-7">
+							<label for="trailerCheck-7" class="form-check-label">7. Поврежден правый рожок</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-8" aria-expanded="false" aria-controls="collapse-trailer-8">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-8">
+							<label for="trailerCheck-8" class="form-check-label">8. Поврежден левый рожок</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-9" aria-expanded="false" aria-controls="collapse-trailer-9">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-9">
+							<label for="trailerCheck-9" class="form-check-label">9. Поврежден правый фонарь</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-10" aria-expanded="false" aria-controls="collapse-trailer-10">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-10">
+							<label for="trailerCheck-10" class="form-check-label">10. Поврежден левый фонарь</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-11" aria-expanded="false" aria-controls="collapse-trailer-11">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-11">
+							<label for="trailerCheck-11" class="form-check-label">11. Поврежден задний правый отбойник</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-12" aria-expanded="false" aria-controls="collapse-trailer-12">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-12">
+							<label for="trailerCheck-12" class="form-check-label">12. Поврежден задний левый отбойник</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-13" aria-expanded="false" aria-controls="collapse-trailer-13">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-13">
+							<label for="trailerCheck-13" class="form-check-label">13. Поврежден задний бампер</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-14" aria-expanded="false" aria-controls="collapse-trailer-14">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-14">
+							<label for="trailerCheck-14" class="form-check-label">14. Повреждена правая дверь</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-15" aria-expanded="false" aria-controls="collapse-trailer-15">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-15">
+							<label for="trailerCheck-15" class="form-check-label">15. Повреждена левая дверь</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-16" aria-expanded="false" aria-controls="collapse-trailer-16">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-16">
+							<label for="trailerCheck-16" class="form-check-label">16. Повреждена петля правой двери</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-17" aria-expanded="false" aria-controls="collapse-trailer-17">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-17">
+							<label for="trailerCheck-17" class="form-check-label">17. Повреждена петля левой двери</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-18" aria-expanded="false" aria-controls="collapse-trailer-18">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-18">
+							<label for="trailerCheck-18" class="form-check-label">18. Поврежден ящик</label>
+						</div>
+						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-trailer-19" aria-expanded="false" aria-controls="collapse-trailer-19">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-19">
+							<label for="trailerCheck-19" class="form-check-label">19. Повреждена защитная крышка правого фонаря</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-20" aria-expanded="false" aria-controls="collapse-trailer-20">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-20">
+							<label for="trailerCheck-20" class="form-check-label">20. Повреждена защитная крышка левого фонаря</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-21" aria-expanded="false" aria-controls="collapse-trailer-21">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-21">
+							<label for="trailerCheck-21" class="form-check-label">21. Нечитаемый гос. номер</label>
+						</div>
+						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-22" aria-expanded="false" aria-controls="collapse-trailer-22">
+							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-22">
+							<label for="trailerCheck-22" class="form-check-label">22. Нет рекламы</label>
+						</div>
+
+						<div class="btn-group dropup mt-3">
+							<button class="btn btn-outline-primary btn-block dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-trailer" aria-expanded="false" aria-controls="collapse-trailer">ППЦ</button>
+						</div>
+				  </div>
+				</div>
+				
+				<div class="collapse" id="collapse-trailer-1">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">1. Поврежден тент с правой стороны</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-1" name="inputFile-trailer-1" multiple>
+				 			<label for="inputFile-trailer-1" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-2">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">2. Поврежден тент с левой стороны</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-2" name="inputFile-trailer-2" multiple>
+				 			<label for="inputFile-trailer-2" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-3">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">3. Поврежден правый отбойник</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-3" name="inputFile-trailer-3" multiple>
+				 			<label for="inputFile-trailer-3" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-4">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">4. Поврежден левый отбойник</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-4" name="inputFile-trailer-4" multiple>
+				 			<label for="inputFile-trailer-4" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-5">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">5. Поврежден боковой габарит с правой стороны</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-5" name="inputFile-trailer-5" multiple>
+				 			<label for="inputFile-trailer-5" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-6">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">6. Поврежден боковой габарит с левой стороны</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-6" name="inputFile-trailer-6" multiple>
+				 			<label for="inputFile-trailer-6" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-7">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">7. Поврежден правый рожок</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-7" name="inputFile-trailer-7" multiple>
+				 			<label for="inputFile-trailer-7" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-8">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">8. Поврежден левый рожок</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-8" name="inputFile-trailer-8" multiple>
+				 			<label for="inputFile-trailer-8" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-9">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">9. Поврежден правый фонарь</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-9" name="inputFile-trailer-9" multiple>
+				 			<label for="inputFile-trailer-9" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-10">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">10. Поврежден левый фонарь</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-10" name="inputFile-trailer-10" multiple>
+				 			<label for="inputFile-trailer-10" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-11">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">11. Поврежден задний правый отбойник</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-11" name="inputFile-trailer-11" multiple>
+				 			<label for="inputFile-trailer-11" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-12">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">12. Поврежден задний левый отбойник</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-12" name="inputFile-trailer-12" multiple>
+				 			<label for="inputFile-trailer-12" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-13">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">13. Поврежден задний бампер</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-13" name="inputFile-trailer-13" multiple>
+				 			<label for="inputFile-trailer-13" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-14">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">14. Повреждена правая дверь</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-14" name="inputFile-trailer-14" multiple>
+				 			<label for="inputFile-trailer-14" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-15">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">15. Повреждена левая дверь</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-15" name="inputFile-trailer-15" multiple>
+				 			<label for="inputFile-trailer-15" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-16">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">16. Повреждена петля правой двери</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-16" name="inputFile-trailer-16" multiple>
+				 			<label for="inputFile-trailer-16" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-17">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">17. Повреждена петля левой двери</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-17" name="inputFile-trailer-17" multiple>
+				 			<label for="inputFile-trailer-17" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-18">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">18. Поврежден ящик</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-18" name="inputFile-trailer-18" multiple>
+				 			<label for="inputFile-trailer-18" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-19">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">19. Повреждена защитная крышка правого фонаря</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-19" name="inputFile-trailer-19" multiple>
+				 			<label for="inputFile-trailer-19" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-20">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">20. Повреждена защитная крышка левого фонаря</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-20" name="inputFile-trailer-20" multiple>
+				 			<label for="inputFile-trailer-20" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-21">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">21. Нечитаемый гос. номер</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-21" name="inputFile-trailer-21" multiple>
+				 			<label for="inputFile-trailer-21" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="collapse" id="collapse-trailer-22">
+				 	<div class="card card-body">
+				 		<p class="h6 text-center">22. Нет рекламы</p>
+				 		<div class="input-group">
+				 			<input type="file" class="form-control" id="inputFile-trailer-22" name="inputFile-trailer-22" multiple>
+				 			<label for="inputFile-trailer-22" class="input-group-text">Загрузить</label>
+				 		</div>
+				 	</div>
+				 </div>
+			</div>
+
+			<div class="btn-group mt-4 w-100" role="group" aria-label="nav-botton">
+				<button type="button" class="btn btn-primary bg-lg" id="form__2-12__button-back" name="form__2-12__button-back" value="back">Назад</button>
+				<button type="button" class="btn btn-primary active bg-lg" id="form__2-12__button-next" name="form__2-12__button-next" value="next">Далее</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

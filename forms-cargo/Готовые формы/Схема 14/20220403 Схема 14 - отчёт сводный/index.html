@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- Bootstrap CSS + JS -->
+<!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+  
+  <link rel="stylesheet" href="./css/sticky-table.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Ежедневный сводный отчёт начальников автоколонн</title>
+</head>
+<body>
+  <h1 class="text-center">Сводный отчёт на "_<output name="day-report"></output>_"<output name="month-report">______</output>2022г.</h1>
+  <div class="container table-wrap mb-4">
+    <form name="form__table__1" class="table-container form__table__1">
+      <table class="table table-hover caption-top table__1">
+        <thead class="head-sticky">
+          <tr>
+            <th rowspan="2" class="col-sticky vertical"></th>
+            <th class="col-sticky col-sticky-2"><p>ФИО начальника автоколонны</p></th>
+            <th><input type="text" name="form__input-01-1" id="form__input-01-1" placeholder="Ф.И.О."></th>
+            <th><input type="text" name="form__input-01-2" id="form__input-01-2" placeholder="Ф.И.О."></th>
+            <th><input type="text" name="form__input-01-3" id="form__input-01-3" placeholder="Ф.И.О."></th>
+            <th><input type="text" name="form__input-01-4" id="form__input-01-4" placeholder="Ф.И.О."></th>
+            <th><input type="text" name="form__input-01-5" id="form__input-01-5" placeholder="Ф.И.О."></th>
+            <th rowspan="2" class="total"><p>Всего (факт)</p></th>
+            <th rowspan="2" class="total"><p>Всего (план)</p></th>
+          </tr>
+          <tr>
+            <th scope="row" class="col-sticky col-sticky-2"><p>№ автоколонны</p></th>
+            <th><input type="text" name="form__input-02-1" id="form__input-02-1" placeholder="##"></th>
+            <th><input type="text" name="form__input-02-2" id="form__input-02-2" placeholder="##"></th>
+            <th><input type="text" name="form__input-02-3" id="form__input-02-3" placeholder="##"></th>
+            <th><input type="text" name="form__input-02-4" id="form__input-02-4" placeholder="##"></th>
+            <th><input type="text" name="form__input-02-5" id="form__input-02-5" placeholder="##"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="subsum">
+            <th rowspan="18" scope="row" class="col-sticky vertical vertical-1"><p class="m-0">Автомобили</p></th>
+            <th scope="row" class="col-sticky col-sticky-2"><p>В рейсе (с путевыми листами)</p></th>
+            <td><input type="number" min="0" name="form__input-1-1" id="form__input-1-1"></td>
+            <td><input type="number" min="0" name="form__input-1-2" id="form__input-1-2"></td>
+            <td><input type="number" min="0" name="form__input-1-3" id="form__input-1-3"></td>
+            <td><input type="number" min="0" name="form__input-1-4" id="form__input-1-4"></td>
+            <td><input type="number" min="0" name="form__input-1-5" id="form__input-1-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-1-6" id="form__input-1-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-1-7" id="form__input-1-7"></td>
+          </tr>
+          <tr class=" marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>На линии</p></th>
+            <td><input type="number" min="0" name="form__input-2-1" id="form__input-2-1"></td>
+            <td><input type="number" min="0" name="form__input-2-2" id="form__input-2-2"></td>
+            <td><input type="number" min="0" name="form__input-2-3" id="form__input-2-3"></td>
+            <td><input type="number" min="0" name="form__input-2-4" id="form__input-2-4"></td>
+            <td><input type="number" min="0" name="form__input-2-5" id="form__input-2-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-2-6" id="form__input-2-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-2-7" id="form__input-2-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Ремонт (можно грузить)</p></th>
+            <td><input type="number" min="0" name="form__input-3-1" id="form__input-3-1"></td>
+            <td><input type="number" min="0" name="form__input-3-2" id="form__input-3-2"></td>
+            <td><input type="number" min="0" name="form__input-3-3" id="form__input-3-3"></td>
+            <td><input type="number" min="0" name="form__input-3-4" id="form__input-3-4"></td>
+            <td><input type="number" min="0" name="form__input-3-5" id="form__input-3-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-3-6" id="form__input-3-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-3-7" id="form__input-3-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Ремонт (нельзя грузить)</p></th>
+            <td><input type="number" min="0" name="form__input-4-1" id="form__input-4-1"></td>
+            <td><input type="number" min="0" name="form__input-4-2" id="form__input-4-2"></td>
+            <td><input type="number" min="0" name="form__input-4-3" id="form__input-4-3"></td>
+            <td><input type="number" min="0" name="form__input-4-4" id="form__input-4-4"></td>
+            <td><input type="number" min="0" name="form__input-4-5" id="form__input-4-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-4-6" id="form__input-4-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-4-7" id="form__input-4-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Пригнать на продажу (тягач)</p></th>
+            <td><input type="number" min="0" name="form__input-5-1" id="form__input-5-1"></td>
+            <td><input type="number" min="0" name="form__input-5-2" id="form__input-5-2"></td>
+            <td><input type="number" min="0" name="form__input-5-3" id="form__input-5-3"></td>
+            <td><input type="number" min="0" name="form__input-5-4" id="form__input-5-4"></td>
+            <td><input type="number" min="0" name="form__input-5-5" id="form__input-5-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-5-6" id="form__input-5-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-5-7" id="form__input-5-7"></td>
+          </tr>
+          <tr class="subsum">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Не в рейсе (без путевых листов)</p></th>
+            <td><input type="number" min="0" name="form__input-6-1" id="form__input-6-1"></td>
+            <td><input type="number" min="0" name="form__input-6-2" id="form__input-6-2"></td>
+            <td><input type="number" min="0" name="form__input-6-3" id="form__input-6-3"></td>
+            <td><input type="number" min="0" name="form__input-6-4" id="form__input-6-4"></td>
+            <td><input type="number" min="0" name="form__input-6-5" id="form__input-6-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-6-6" id="form__input-6-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-6-7" id="form__input-6-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Встала по ДТП</p></th>
+            <td><input type="number" min="0" name="form__input-7-1" id="form__input-7-1"></td>
+            <td><input type="number" min="0" name="form__input-7-2" id="form__input-7-2"></td>
+            <td><input type="number" min="0" name="form__input-7-3" id="form__input-7-3"></td>
+            <td><input type="number" min="0" name="form__input-7-4" id="form__input-7-4"></td>
+            <td><input type="number" min="0" name="form__input-7-5" id="form__input-7-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-7-6" id="form__input-7-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-7-7" id="form__input-7-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Встала по ДТП ТОТАЛ</p></th>
+            <td><input type="number" min="0" name="form__input-8-1" id="form__input-8-1"></td>
+            <td><input type="number" min="0" name="form__input-8-2" id="form__input-8-2"></td>
+            <td><input type="number" min="0" name="form__input-8-3" id="form__input-8-3"></td>
+            <td><input type="number" min="0" name="form__input-8-4" id="form__input-8-4"></td>
+            <td><input type="number" min="0" name="form__input-8-5" id="form__input-8-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-8-6" id="form__input-8-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-8-7" id="form__input-8-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Встала на продажу</p></th>
+            <td><input type="number" min="0" name="form__input-9-1" id="form__input-9-1"></td>
+            <td><input type="number" min="0" name="form__input-9-2" id="form__input-9-2"></td>
+            <td><input type="number" min="0" name="form__input-9-3" id="form__input-9-3"></td>
+            <td><input type="number" min="0" name="form__input-9-4" id="form__input-9-4"></td>
+            <td><input type="number" min="0" name="form__input-9-5" id="form__input-9-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-9-6" id="form__input-9-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-9-7" id="form__input-9-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Ремонт (нельзя грузить)</p></th>
+            <td><input type="number" min="0" name="form__input-10-1" id="form__input-10-1"></td>
+            <td><input type="number" min="0" name="form__input-10-2" id="form__input-10-2"></td>
+            <td><input type="number" min="0" name="form__input-10-3" id="form__input-10-3"></td>
+            <td><input type="number" min="0" name="form__input-10-4" id="form__input-10-4"></td>
+            <td><input type="number" min="0" name="form__input-10-5" id="form__input-10-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-10-6" id="form__input-10-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-10-7" id="form__input-10-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Без водителя - Челны</p></th>
+            <td><input type="number" min="0" name="form__input-11-1" id="form__input-11-1"></td>
+            <td><input type="number" min="0" name="form__input-11-2" id="form__input-11-2"></td>
+            <td><input type="number" min="0" name="form__input-11-3" id="form__input-11-3"></td>
+            <td><input type="number" min="0" name="form__input-11-4" id="form__input-11-4"></td>
+            <td><input type="number" min="0" name="form__input-11-5" id="form__input-11-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-11-6" id="form__input-11-6"></td>
+            <td class="total" rowspan="3"><input type="number" min="0" name="form__input-11-7" id="form__input-11-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Без водителя - Омск</p></th>
+            <td><input type="number" min="0" name="form__input-12-1" id="form__input-12-1"></td>
+            <td><input type="number" min="0" name="form__input-12-2" id="form__input-12-2"></td>
+            <td><input type="number" min="0" name="form__input-12-3" id="form__input-12-3"></td>
+            <td><input type="number" min="0" name="form__input-12-4" id="form__input-12-4"></td>
+            <td><input type="number" min="0" name="form__input-12-5" id="form__input-12-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-12-6" id="form__input-12-6"></td>
+            <!-- <td class="total"><input type="number" min="0" name="form__input-12-7" id="form__input-12-7"></td> -->
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Без водителя - Иркутск</p></th>
+            <td><input type="number" min="0" name="form__input-13-1" id="form__input-13-1"></td>
+            <td><input type="number" min="0" name="form__input-13-2" id="form__input-13-2"></td>
+            <td><input type="number" min="0" name="form__input-13-3" id="form__input-13-3"></td>
+            <td><input type="number" min="0" name="form__input-13-4" id="form__input-13-4"></td>
+            <td><input type="number" min="0" name="form__input-13-5" id="form__input-13-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-13-6" id="form__input-13-6"></td>
+            <!-- <td class="total"><input type="number" min="0" name="form__input-13-7" id="form__input-13-7"></td> -->
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Водитель отдыхает - Челны</p></th>
+            <td><input type="number" min="0" name="form__input-14-1" id="form__input-14-1"></td>
+            <td><input type="number" min="0" name="form__input-14-2" id="form__input-14-2"></td>
+            <td><input type="number" min="0" name="form__input-14-3" id="form__input-14-3"></td>
+            <td><input type="number" min="0" name="form__input-14-4" id="form__input-14-4"></td>
+            <td><input type="number" min="0" name="form__input-14-5" id="form__input-14-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-14-6" id="form__input-14-6"></td>
+            <td class="total" rowspan="3"><input type="number" min="0" name="form__input-14-7" id="form__input-14-7"></td>
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Водитель отдыхает - Омск</p></th>
+            <td><input type="number" min="0" name="form__input-15-1" id="form__input-15-1"></td>
+            <td><input type="number" min="0" name="form__input-15-2" id="form__input-15-2"></td>
+            <td><input type="number" min="0" name="form__input-15-3" id="form__input-15-3"></td>
+            <td><input type="number" min="0" name="form__input-15-4" id="form__input-15-4"></td>
+            <td><input type="number" min="0" name="form__input-15-5" id="form__input-15-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-15-6" id="form__input-15-6"></td>
+            <!-- <td class="total"><input type="number" min="0" name="form__input-15-7" id="form__input-15-7"></td> -->
+          </tr>
+          <tr class="marked">
+            <th scope="row" class="col-sticky col-sticky-2"><p>Водитель отдыхает - Иркутск</p></th>
+            <td><input type="number" min="0" name="form__input-16-1" id="form__input-16-1"></td>
+            <td><input type="number" min="0" name="form__input-16-2" id="form__input-16-2"></td>
+            <td><input type="number" min="0" name="form__input-16-3" id="form__input-16-3"></td>
+            <td><input type="number" min="0" name="form__input-16-4" id="form__input-16-4"></td>
+            <td><input type="number" min="0" name="form__input-16-5" id="form__input-16-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-16-6" id="form__input-16-6"></td>
+            <!-- <td class="total"><input type="number" min="0" name="form__input-16-7" id="form__input-16-7"></td> -->
+          </tr>
+          <tr class="subsum">
+            <th scope="row" class="col-sticky col-sticky-2 text-end"><p>Итого (закрепление):</p></th>
+            <td><input type="number" min="0" name="form__input-17-1" id="form__input-17-1"></td>
+            <td><input type="number" min="0" name="form__input-17-2" id="form__input-17-2"></td>
+            <td><input type="number" min="0" name="form__input-17-3" id="form__input-17-3"></td>
+            <td><input type="number" min="0" name="form__input-17-4" id="form__input-17-4"></td>
+            <td><input type="number" min="0" name="form__input-17-5" id="form__input-17-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-17-6" id="form__input-17-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-17-7" id="form__input-17-7"></td>
+          </tr>
+          <tr class="subsum">
+            <th scope="row" class="col-sticky col-sticky-2 text-end"><p>Итого (отчёт):</p></th>
+            <td><input type="number" min="0" name="form__input-18-1" id="form__input-18-1"></td>
+            <td><input type="number" min="0" name="form__input-18-2" id="form__input-18-2"></td>
+            <td><input type="number" min="0" name="form__input-18-3" id="form__input-18-3"></td>
+            <td><input type="number" min="0" name="form__input-18-4" id="form__input-18-4"></td>
+            <td><input type="number" min="0" name="form__input-18-5" id="form__input-18-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-18-6" id="form__input-18-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-18-7" id="form__input-18-7"></td>
+          </tr>
+
+          <!-- ----Водители----- -->
+          <tr class="subsum">
+            <th rowspan="13" scope="row" class="col-sticky vertical vertical-2"><p class="m-0">Водители</p></th>
+            <th scope="row" class="col-sticky col-sticky-2"><p>В рейсе (с путевыми листами)</p></th>
+            <td><input type="number" min="0" name="form__input-19-1" id="form__input-19-1"></td>
+            <td><input type="number" min="0" name="form__input-19-2" id="form__input-19-2"></td>
+            <td><input type="number" min="0" name="form__input-19-3" id="form__input-19-3"></td>
+            <td><input type="number" min="0" name="form__input-19-4" id="form__input-19-4"></td>
+            <td><input type="number" min="0" name="form__input-19-5" id="form__input-19-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-19-6" id="form__input-19-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-19-7" id="form__input-19-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>На линии</p></th>
+            <td><input type="number" min="0" name="form__input-20-1" id="form__input-20-1"></td>
+            <td><input type="number" min="0" name="form__input-20-2" id="form__input-20-2"></td>
+            <td><input type="number" min="0" name="form__input-20-3" id="form__input-20-3"></td>
+            <td><input type="number" min="0" name="form__input-20-4" id="form__input-20-4"></td>
+            <td><input type="number" min="0" name="form__input-20-5" id="form__input-20-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-20-6" id="form__input-20-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-20-7" id="form__input-20-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>На линии с чужой колонны</p></th>
+            <td><input type="number" min="0" name="form__input-21-1" id="form__input-21-1"></td>
+            <td><input type="number" min="0" name="form__input-21-2" id="form__input-21-2"></td>
+            <td><input type="number" min="0" name="form__input-21-3" id="form__input-21-3"></td>
+            <td><input type="number" min="0" name="form__input-21-4" id="form__input-21-4"></td>
+            <td><input type="number" min="0" name="form__input-21-5" id="form__input-21-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-21-6" id="form__input-21-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-21-7" id="form__input-21-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>На линии в чужой колонне</p></th>
+            <td><input type="number" min="0" name="form__input-22-1" id="form__input-22-1"></td>
+            <td><input type="number" min="0" name="form__input-22-2" id="form__input-22-2"></td>
+            <td><input type="number" min="0" name="form__input-22-3" id="form__input-22-3"></td>
+            <td><input type="number" min="0" name="form__input-22-4" id="form__input-22-4"></td>
+            <td><input type="number" min="0" name="form__input-22-5" id="form__input-22-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-22-6" id="form__input-22-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-22-7" id="form__input-22-7"></td>
+          </tr>
+          <tr class="subsum">
+            <th class="col-sticky col-sticky-2"><p>Не в рейсе (без путевых листов)</p></th>
+            <td><input type="number" min="0" name="form__input-23-1" id="form__input-23-1"></td>
+            <td><input type="number" min="0" name="form__input-23-2" id="form__input-23-2"></td>
+            <td><input type="number" min="0" name="form__input-23-3" id="form__input-23-3"></td>
+            <td><input type="number" min="0" name="form__input-23-4" id="form__input-23-4"></td>
+            <td><input type="number" min="0" name="form__input-23-5" id="form__input-23-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-23-6" id="form__input-23-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-23-7" id="form__input-23-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>Выходной</p></th>
+            <td><input type="number" min="0" name="form__input-24-1" id="form__input-24-1"></td>
+            <td><input type="number" min="0" name="form__input-24-2" id="form__input-24-2"></td>
+            <td><input type="number" min="0" name="form__input-24-3" id="form__input-24-3"></td>
+            <td><input type="number" min="0" name="form__input-24-4" id="form__input-24-4"></td>
+            <td><input type="number" min="0" name="form__input-24-5" id="form__input-24-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-24-6" id="form__input-24-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-24-7" id="form__input-24-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>Больничный</p></th>
+            <td><input type="number" min="0" name="form__input-25-1" id="form__input-25-1"></td>
+            <td><input type="number" min="0" name="form__input-25-2" id="form__input-25-2"></td>
+            <td><input type="number" min="0" name="form__input-25-3" id="form__input-25-3"></td>
+            <td><input type="number" min="0" name="form__input-25-4" id="form__input-25-4"></td>
+            <td><input type="number" min="0" name="form__input-25-5" id="form__input-25-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-25-6" id="form__input-25-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-25-7" id="form__input-25-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>Отпуск</p></th>
+            <td><input type="number" min="0" name="form__input-26-1" id="form__input-26-1"></td>
+            <td><input type="number" min="0" name="form__input-26-2" id="form__input-26-2"></td>
+            <td><input type="number" min="0" name="form__input-26-3" id="form__input-26-3"></td>
+            <td><input type="number" min="0" name="form__input-26-4" id="form__input-26-4"></td>
+            <td><input type="number" min="0" name="form__input-26-5" id="form__input-26-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-26-6" id="form__input-26-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-26-7" id="form__input-26-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>Прогул</p></th>
+            <td><input type="number" min="0" name="form__input-27-1" id="form__input-27-1"></td>
+            <td><input type="number" min="0" name="form__input-27-2" id="form__input-27-2"></td>
+            <td><input type="number" min="0" name="form__input-27-3" id="form__input-27-3"></td>
+            <td><input type="number" min="0" name="form__input-27-4" id="form__input-27-4"></td>
+            <td><input type="number" min="0" name="form__input-27-5" id="form__input-27-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-27-6" id="form__input-27-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-27-7" id="form__input-27-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>Административный</p></th>
+            <td><input type="number" min="0" name="form__input-28-1" id="form__input-28-1"></td>
+            <td><input type="number" min="0" name="form__input-28-2" id="form__input-28-2"></td>
+            <td><input type="number" min="0" name="form__input-28-3" id="form__input-28-3"></td>
+            <td><input type="number" min="0" name="form__input-28-4" id="form__input-28-4"></td>
+            <td><input type="number" min="0" name="form__input-28-5" id="form__input-28-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-28-6" id="form__input-28-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-28-7" id="form__input-28-7"></td>
+          </tr>
+          <tr class="marked">
+            <th class="col-sticky col-sticky-2"><p>Перегон техники</p></th>
+            <td><input type="number" min="0" name="form__input-29-1" id="form__input-29-1"></td>
+            <td><input type="number" min="0" name="form__input-29-2" id="form__input-29-2"></td>
+            <td><input type="number" min="0" name="form__input-29-3" id="form__input-29-3"></td>
+            <td><input type="number" min="0" name="form__input-29-4" id="form__input-29-4"></td>
+            <td><input type="number" min="0" name="form__input-29-5" id="form__input-29-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-29-6" id="form__input-29-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-29-7" id="form__input-29-7"></td>
+          </tr>
+          <tr class="subsum">
+            <th scope="row" class="col-sticky col-sticky-2 text-end"><p>Итого (закрепление):</p></th>
+            <td><input type="number" min="0" name="form__input-30-1" id="form__input-30-1"></td>
+            <td><input type="number" min="0" name="form__input-30-2" id="form__input-30-2"></td>
+            <td><input type="number" min="0" name="form__input-30-3" id="form__input-30-3"></td>
+            <td><input type="number" min="0" name="form__input-30-4" id="form__input-30-4"></td>
+            <td><input type="number" min="0" name="form__input-30-5" id="form__input-30-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-30-6" id="form__input-30-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-30-7" id="form__input-30-7"></td>
+          </tr>
+          <tr class="subsum">
+            <th scope="row" class="col-sticky col-sticky-2 text-end"><p>Итого (отчёт):</p></th>
+            <td><input type="number" min="0" name="form__input-31-1" id="form__input-31-1"></td>
+            <td><input type="number" min="0" name="form__input-31-2" id="form__input-31-2"></td>
+            <td><input type="number" min="0" name="form__input-31-3" id="form__input-31-3"></td>
+            <td><input type="number" min="0" name="form__input-31-4" id="form__input-31-4"></td>
+            <td><input type="number" min="0" name="form__input-31-5" id="form__input-31-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-31-6" id="form__input-31-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-31-7" id="form__input-31-7"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="subsum">
+            <th colspan="2" scope="row" class="col-sticky text-end"><p>Коэффициент выпуска:</p></th>
+            <td><input type="number" min="0" name="form__input-32-1" id="form__input-32-1"></td>
+            <td><input type="number" min="0" name="form__input-32-2" id="form__input-32-2"></td>
+            <td><input type="number" min="0" name="form__input-32-3" id="form__input-32-3"></td>
+            <td><input type="number" min="0" name="form__input-32-4" id="form__input-32-4"></td>
+            <td><input type="number" min="0" name="form__input-32-5" id="form__input-32-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-32-6" id="form__input-32-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-32-7" id="form__input-32-7"></td>
+          </tr>
+          <tr class="subsum">
+            <th colspan="2" scope="row" class="col-sticky text-end"><p>Коэффициент комплектности:</p></th>
+            <td><input type="number" min="0" name="form__input-33-1" id="form__input-33-1"></td>
+            <td><input type="number" min="0" name="form__input-33-2" id="form__input-33-2"></td>
+            <td><input type="number" min="0" name="form__input-33-3" id="form__input-33-3"></td>
+            <td><input type="number" min="0" name="form__input-33-4" id="form__input-33-4"></td>
+            <td><input type="number" min="0" name="form__input-33-5" id="form__input-33-5"></td>
+            <td class="total"><input type="number" min="0" name="form__input-33-6" id="form__input-33-6"></td>
+            <td class="total"><input type="number" min="0" name="form__input-33-7" id="form__input-33-7"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

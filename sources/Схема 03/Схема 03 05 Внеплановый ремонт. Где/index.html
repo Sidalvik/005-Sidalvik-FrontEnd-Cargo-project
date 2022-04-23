@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Внеплановый ремонт. Регистрация.</title>
+		          <!-- Bootstrap CSS + JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <style>
+  	.col {
+  		max-width: 576px;
+  	}
+
+  	@media (orientation: portrait) {
+	  	form {
+	  		min-height: calc(100vh - 5rem);
+	  	}
+	 }
+  </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col mx-auto">
+				<form  name="form__3-5" class="w-100 pt-4 pb-4 d-flex flex-column form__3-5">
+					<div class="input-group mt-3">
+						<input type="text" name="form__3-5__input-1" id="form__3-5__input-1" class="form-control text-center bg-warning form__3-5__input" placeholder="н 320 ук 716rus" disabled>
+					</div>
+					<div class="input-group mt-1">
+						<input type="text" name="form__3-5__input-2" id="form__3-5__input-2" class="form-control text-center bg-warning form__3-5__input" placeholder="8456 ВА" disabled>
+					</div>
+					<div class="input-group mt-1">
+						<input type="text" name="form__3-5__input-3" id="form__3-5__input-3" class="form-control text-center bg-warning form__3-5__input" placeholder="" disabled>
+					</div>
+					<div class="btn-group w-100 mt-4" role="group">
+						<button type="button" name="form__3-5__button-1" id="form__3-5__button-1" class="btn btn-outline-primary btn-lg form__3-5__button" value="Где ремонтировать">Где ремонтировать</button>
+					</div>
+					<div class="input-group mt-3">
+						<span class="input-group-text" id="form__3-5__input-span">Заезд</span>
+						<input type="datetime-local" name="form__3-5__input-4" id="form__3-5__input-4" class="form-control text-center form__3-5__input">
+					</div>
+					<div class="input-group mt-1">
+						<input type="email" name="form__3-5__input-5" id="form__3-5__input-5" class="form-control text-center form__3-5__input" placeholder="e-mail адрес" disabled>
+					</div>
+
+					<div class="btn-group w-100 mt-auto" role="group">
+						<button type="button" name="form__3-5__button-back" id="form__3-5__button-back" class="btn btn-lg btn-primary form__3-5__button" value="back">Назад</button>
+						<button type="button" name="form__3-5__button-next" id="form__3-5__button-next" class="btn btn-lg btn-primary active form__3-5__button" value="next">Зарегистрировать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

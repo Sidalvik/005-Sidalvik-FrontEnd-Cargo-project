@@ -1,0 +1,159 @@
+body {
+	padding: 0.5rem;
+}
+
+.card-body p {
+	margin-bottom: 0;
+}
+
+.top-toolbar {
+	gap: 2px;
+	max-width: 992px;
+	font-size: 0.85rem;
+}
+
+.top-toolbar-element {
+	width: calc(50% - 2px);
+	padding: 2px;
+}
+
+.top-toolbar-element .card-body {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5em;
+}
+
+
+.top-toolbar-element .card-title {
+	font-size: 0.8em;
+}
+
+.top-toolbar-element .parameter {
+	margin-top: auto;
+	margin-bottom: 0;
+	font-size: 1.5em;
+	background-color: #cecece;
+}
+
+@media (min-width: 576px) {
+	.top-toolbar-element {
+		width: calc(25% - 2px);
+	}
+}
+
+@media (min-width: 768px) {
+	.top-toolbar-element {
+		width: calc(12.5% - 2px);
+	}
+
+}
+
+.dashboard {
+	/*font-size: 1.0vw;*/
+}
+
+.left-toolbar-element {
+	width: 100%;
+	/*font-size: 0.8rem;*/
+}
+
+
+.left-toolbar .card-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-toolbar .flash {
+	width: 1.5em;
+	height: 1.5em;
+	margin-left: 0.5em;
+	flex: none;
+	border: 1px solid transparent;
+	border-radius: 50%;
+}
+
+.left-toolbar .card-body > .card-text {
+	flex: auto;
+}
+
+.left-toolbar-element .parameter {
+	background-color: #cecece;
+}
+
+.left-toolbar-element .card-body {
+	padding: 0.5em;
+}
+
+
+.center-toolbar-element .card-wrap {
+	display: flex;
+}
+
+.center-toolbar-element .block-row {
+	padding: 2px;
+	background-color: yellow;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+}
+
+.center-toolbar-element p {
+	margin: 0;
+	text-align: center;
+}
+
+.center-toolbar-element .block-0 {
+	width: 9.52%;
+}
+
+.center-toolbar-element .block-1,
+.center-toolbar-element .block-2,
+.center-toolbar-element .block-3,
+.center-toolbar-element .block-4,
+.center-toolbar-element .block-5 {
+	width: 8.16%;
+}
+
+
+.left-side .block-0 {
+	margin-right: 0;
+}
+
+.left-side .block-1 {
+	margin-right: 16.46%;
+}
+
+.left-side .block-2 {
+	margin-right: 19.18%;
+}
+
+.left-side .block-3,
+.left-side .block-4 {
+	margin-right: 0;
+}
+
+.left-side .block-5  {
+	margin-right: 14.0%;
+}
+
+
+.right-side .block-0 {
+	margin-left: 0;
+}
+
+.right-side .block-1 {
+	margin-left: 16.46%;
+}
+
+.right-side .block-2 {
+	margin-left: 19.18%;
+}
+
+.right-side .block-3,
+.right-side .block-4 {
+	margin-left: 0;
+}
+
+.right-side .block-5  {
+	margin-left: 14.0%;
+}

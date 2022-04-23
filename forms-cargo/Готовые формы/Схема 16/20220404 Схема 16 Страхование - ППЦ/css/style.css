@@ -1,0 +1,27 @@
+:root {
+	--table-min-width: 1300px;
+}
+
+.table-container {
+	min-width: var(--table-min-width);
+}
+
+.count {
+	width: 4rem;
+	vertical-align: bottom;
+}
+
+.table thead tr:nth-of-type(1) th {
+	border-bottom: none;
+	background-color: #f2bd04;
+}
+
+.table p {
+	margin: 0;
+}
+
+.table tbody {
+	border-top:none !important;
+	font-size: 0.8rem;
+}
+

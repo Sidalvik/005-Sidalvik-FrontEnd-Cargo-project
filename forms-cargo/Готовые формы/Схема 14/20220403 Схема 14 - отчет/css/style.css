@@ -1,0 +1,108 @@
+:root {
+	--table-bg: #ffffff;
+	--thead-bg: #ffc107;
+	--border-color: #dee2e6;
+	--table-min-width: 1300px;
+	--bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.table-container {
+	min-width: var(--table-min-width);
+}
+
+thead,
+.table__3 th {
+	text-align: center;
+	background-color: var(--thead-bg);
+}
+
+table th,
+table td {
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-left-color: inherit;
+	border-right-color: inherit;
+	vertical-align: middle;
+}
+
+table p {
+	margin: 0;
+}
+
+.subtitle p > span {
+	font-size: 0.7em;
+	line-height: 1.1em;
+}
+
+table thead tr th {
+	min-width: var(--min-fixit-col);
+}
+
+table input,
+table textarea {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+	color: inherit;
+	text-align: inherit;
+	resize: none;
+}
+
+table input[type="number"] {
+	text-align: end;
+}
+
+
+table tbody td p {
+	margin: 0;
+}
+
+ table caption {
+ 	font-size: 1.625em;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	border: 1px solid;
+ 	border-color: inherit;
+ 	border-bottom: none;
+ }
+
+td.hidden {
+	display: none;
+}
+
+.subtitle-marked {
+	font-weight: bold;
+	background-color: #a0a0a0;
+}
+
+.subfooter,
+.subfooter input {
+	font-weight: bold;
+}
+
+.col-1-1,
+.col-2-1 {
+ 	width: 40%;
+ }
+
+.col-1-2,
+.col-2-2 {
+ 	width: 10%;
+ }
+
+
+.table__3 .col-3-1 {
+ 	max-width: 5%;
+ 	min-width: 3em;
+ }
+
+.table__3 .col-3-2 {
+ 	max-width: 15%;
+ 	min-width: 12em;
+ }
+
+

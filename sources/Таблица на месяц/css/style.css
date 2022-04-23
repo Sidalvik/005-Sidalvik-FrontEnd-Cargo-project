@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+body > p {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.container {
+	margin: auto;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 15px;
+	border: 1px dashed rgba(255, 0, 0, 0.4);
+	background-color: #efffff;
+	border-radius: 20px;
+}
+
+form input,
+form button,
+form select {
+	height: 20px;
+	margin-top: 0;
+	text-align: center;
+	height: 2em;
+}
+
+/*.row {
+	display: flex;
+}*/
+
+/*
+label {
+	margin-bottom: 0;
+}*/
+.row .row .col {
+	display: inline-block;
+}
+.row .row p {
+	box-sizing: border-box;
+	display: inline-block;
+	width: calc(25% - 0.5em);
+	margin: 0;
+}
+
+/*.row .col label{
+	display: block;
+}*/
+
+span {
+	font-size: 0.8em;
+	vertical-align: middle;
+	color: red;
+}

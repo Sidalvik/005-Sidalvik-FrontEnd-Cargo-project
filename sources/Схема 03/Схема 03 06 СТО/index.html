@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ремонт. СТО</title>
+		          <!-- Bootstrap CSS + JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <style>
+  	.col {
+  		max-width: 576px;
+  	}
+
+  	@media (orientation: portrait) {
+	  	form {
+	  		min-height: calc(100vh - 5rem);
+	  	}
+	 }
+  </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col mx-auto">
+				<form name="form__3-6" class="w-100 pt-4 pb-4 d-flex flex-column form__3-6">
+					<div class="input-group">
+						<input type="text" name="form__3-6__input-1" id="form__3-6__input-1" class="form-control text-center bg-warning form__3-6__input" value="СТО" disabled>
+					</div>
+					<div class="input mt-2">
+						<select name="form__3-6__select-1" id="form__3-6__select-1" class="form-select form__3-6__select">
+							<option value="СТО №1">СТО №1</option>
+							<option value="СТО №2">СТО №2</option>
+							<option value="СТО №3">СТО №3</option>
+							<option value="СТО №4">СТО №4</option>
+							<option value="СТО №5">СТО №5</option>
+							<option value="СТО №6">СТО №6</option>
+							<option value="СТО №7">СТО №7</option>
+							<option value="СТО №8">СТО №8</option>
+							<option value="СТО №9">СТО №9</option>
+							<option value="СТО №10">СТО №10</option>
+						</select>
+					</div>
+					<div class="input-group mt-2">
+						<input type="email" name="form__3-6__input-2" id="form__3-6__input-2" class="form-control text-center form__3-6__input" placeholder="e-mail адрес">
+					</div>
+					<div class="btn-group w-100 mt-2">
+						<button type="submit" name="form__3-6__button-1" id="form__3-6__button-1" class="btn btn-outline-primary btn-lg form__3-6__button" value="Отправ. доверенность">Отправить доверенность</button>
+					</div>
+
+					<div class="btn-group w-100 mt-auto py-4" role="group">
+						<button type="button" name="form__3-6__button-back" id="form__3-6__button-back" class="btn btn-lg btn-primary form__3-6__button" value="back">Назад</button>
+						<button type="button" name="form__3-6__button-next" id="form__3-6__button-next" class="btn btn-lg btn-primary active form__3-6__button" value="next">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

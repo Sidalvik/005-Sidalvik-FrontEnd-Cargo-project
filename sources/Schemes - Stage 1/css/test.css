@@ -1,0 +1,9 @@
+
+p:not(:hover) {
+	text-decoration: underline;
+}
+
+
+.o1:checked  ~ .o1:not(:checked){
+	background-color: red;
+}

@@ -1,0 +1,56 @@
+:root {
+	--table-bg: #ffffff;
+	--thead-bg: #ffc107;
+	--border-color: #aaaaaa;
+	--table-min-width: 1200px;
+}
+
+body {
+	padding: 15px;
+}
+
+.table-container {
+	min-width: var(--table-min-width);
+}
+
+table.table th,
+table.table td {
+	width: 11.1111111111%;
+}
+
+
+table.table8 th,
+table.table8 td {
+	width: 12.5%;
+}
+
+thead {
+	background-color: var(--thead-bg);
+}
+
+.head-sticky {
+	position: sticky;
+	top: 0;
+}
+
+
+
+.table-bordered thead.head-sticky,
+.table-bordered thead.head-sticky tr:first-child,
+.table-bordered tbody.table__body {
+	border-top: none;
+}
+
+table input {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+}
+
+table button {
+	width: 100%;
+}

@@ -1,0 +1,101 @@
+:root {
+	--max-width: 1200px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.report-title {
+	width: 100%;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0 auto;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+td {
+	border: 1px solid;
+}
+
+input,
+textarea {
+	border: none;
+	outline: none;
+	width: 100%;
+}
+
+textarea {
+	resize: none;
+}
+
+
+.table-1__input-1 {
+	width: inherit;
+}
+
+td > input[type="number"] {
+	text-align: end;
+}
+
+.container {
+	max-width: var(--max-width);
+	margin: 0 auto;
+}
+
+.form__table__1,
+.table__1,
+.form__table__2,
+.table__2,
+.form__table__3,
+.table__3 {
+	margin: 3em auto;
+	width: 100%;
+}
+
+.subtitle {
+	text-align: center;
+	font-weight: bold;
+}
+
+.subtitle-marked {
+	font-weight: bold;
+	background-color: #a0a0a0;
+}
+
+.subfooter,
+.subfooter input {
+	font-weight: bold;
+}
+
+ caption {
+ 	border: 1px solid;
+ 	border-bottom: none;
+ 	font-size: 1.625em;
+ 	font-weight: bold;
+ 	text-align: center;
+ }
+
+ .col-1-1,
+ .col-2-1 {
+ 	width: 40%;
+ }
+
+ .col-1-2,
+ .col-2-2 {
+ 	width: 10%;
+ }
+
+ .hidden {
+ 	display: none !important;
+ }

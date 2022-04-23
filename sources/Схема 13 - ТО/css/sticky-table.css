@@ -1,0 +1,110 @@
+:root {
+	--table-bg: #ffffff;
+	--thead-bg: #ffc107;
+	--border-color: #dee2e6;
+	--table-min-width: 1300px;
+	--bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	--min-fixit-col-0: 22rem;	
+	--min-fixit-col: 110px;
+
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--bs-font-sans-serif);
+	padding: 1rem 15px;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.m-0 {
+	margin: 0;
+}
+
+.table-wrap {
+	width: 100%;
+	margin-top: 0.5rem;
+	overflow: auto;
+	max-height: calc(100vh - 5.5rem); /*1rem - 3rem - 1rem - 0.5rem*/
+}
+
+
+
+.table-container {
+	min-width: var(--table-min-width);
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	background-color: var(--table-bg);
+}
+
+thead {
+	background-color: var(--thead-bg);
+}
+
+td,
+th {
+	border-right: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+}
+
+td,
+th {
+	padding: 0.5rem 0.3rem;
+}
+
+
+.head-sticky {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+thead.head-sticky {
+	background-color: var(--thead-bg);
+}
+
+thead .col-sticky {
+	background-color: var(--thead-bg);
+	z-index: 2;
+}
+
+.col-sticky {
+	position: sticky;
+	left: 0;
+}
+
+tbody .col-sticky,
+tfoot .col-sticky {
+	background-color: var(--table-bg);
+}
+
+table input {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+	color: inherit;
+	text-align: inherit;
+}
+
+.table-hover tr:hover {
+	background-color: rgba(0, 0, 0, 0.075);
+}

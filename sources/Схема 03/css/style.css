@@ -1,0 +1,92 @@
+:root {
+	--shem-height: 150vh;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 1.5rem;
+	z-index: 10;
+}
+
+h2 {
+	font-size: 0.8em;
+}
+
+p {
+	font-size: 1rem;
+}
+
+.schem {
+	position: relative;
+	height: var(--shem-height);
+	width: calc(var(--shem-height)*5707/2922);
+	overflow: visible;
+}
+
+img {
+	width: auto;
+	height: var(--shem-height);
+	top: 0;
+	left: 0;
+}
+
+.btn {
+	position: absolute;
+	background-color: rgba(205, 205, 205, 0.9);
+	width: 5em;
+	text-align: center;
+	font-size: 2vh;
+	padding: 0.5em;
+	border-radius: 15%;
+}
+
+
+#btn__form__3-8 {
+	/*display: none; */
+	top: 52.5%;
+	left: 53%;
+}
+
+#btn__form__3-7 {
+	/*display: none; */
+	top: 24.5%;
+	left: 93%;
+}
+
+#btn__form__3-6 {
+	/*display: none; */
+	top: 0.8%;
+	left: 59%;
+}
+
+#btn__form__3-5 {
+	/*display: none; */
+	top: 18.5%;
+	left: 59%;
+}
+
+#btn__form__3-4 {
+	/*display: none; */
+	top: 11.0%;
+	left: 46.5%;
+}
+
+#btn__form__3-3 {
+	display: none; 
+	top: 52.5%;
+	left: 8.2%;
+}
+
+#btn__form__3-2 {
+	/*display: none; */
+	top: 12%;
+	left: 18.8%;
+}
+
+#btn__form__3-1 {
+	display: none;
+	top: 57%;
+	left: 1.5%;
+}

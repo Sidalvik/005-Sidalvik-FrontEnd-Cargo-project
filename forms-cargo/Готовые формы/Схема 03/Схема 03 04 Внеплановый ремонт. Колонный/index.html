@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Внеплановый ремонт. Запрос.</title>
+		          <!-- Bootstrap CSS + JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <style>
+  	.col {
+  		max-width: 576px;
+  	}
+
+  	@media (orientation: portrait) {
+	  	form {
+	  		min-height: calc(100vh - 5rem);
+	  	}
+	 }
+  </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col mx-auto">
+				<form name="form__3-4" class="p-2 form__3-4" method="post" enctype="multipart/form-data">
+					<div class="input-group">
+						<input type="text" name="form__3-4__input-1" id="form__3-4__input-1" class="form-control text-center bg-warning form__3-4__input" value="" disabled>
+					</div>
+					<div class="input-group mt-1">
+						<input type="text" name="form__3-4__input-2" id="form__3-4__input-2" class="form-control text-center bg-warning form__3-4__input" value="" disabled>
+					</div>
+					<div class="input-group mt-1">
+						<input type="text" name="form__3-4__input-3" id="form__3-4__input-3" class="form-control text-center bg-warning form__3-4__input" value="" disabled>
+					</div>
+					<div class="input-group mt-2">
+						<input type="text" name="form__3-4__input-4" id="form__3-4__input-4" class="form-control text-center mt-1 form__3-4__input" placeholder="Ф.И.О." disabled>
+					</div>
+					<div class="input-group mt-1">
+						<input type="tel" name="form__3-4__input-5" id="form__3-4__input-5" class="form-control text-center mt-1 form__3-4__input" placeholder="Телефон" disabled>
+					</div>
+						<div class="form-check mt-4 fs-4">
+							<input type="checkbox" name="form__3-4__checkbox-6" id="form__3-4__checkbox-6" class="form-check-input form__3-4__checkbox" value="Тягач" disabled>
+							<label for="form__3-4__checkbox-6" class="w-100 form__3-4__label">Тягач</label>
+						</div>
+						<div class="form-check mt-3 fs-4">
+							<input type="checkbox" name="form__3-4__checkbox-7" id="form__3-4__checkbox-7" class="form-check-input form__3-4__checkbox" value="Полуприцеп" disabled>
+							<label for="form__3-4__checkbox-7" class="w-100 form__3-4__label">Полуприцеп</label>
+						</div>
+						<div class="form-check mt-3 fs-4">
+							<input type="checkbox" name="form__3-4__checkbox-8" id="form__3-4__checkbox-8" class="form-check-input form__3-4__checkbox" value ="Рефрижератор" disabled>
+							<label for="form__3-4__checkbox-8" class="w-100 form__3-4__label">Рефрижератор</label>
+						</div>
+						<div class="input-group mt-3 visually-hidden">
+							<input type="file" name="form__3-4__input-9" id="form__3-4__input-9" class=" form-control text-center mt-1 form__3-4__input" multiple="">
+						</div>
+
+						<div class="input-group mt-3">
+							<img src="./svg/photo_camera_24dp.svg" alt="" class="img-fluid" id="form__3-4__photo-1">
+							<img src="./svg/photo_camera_24dp.svg" alt="" class="img-fluid" id="form__3-4__photo-2">
+							<img src="./svg/photo_camera_24dp.svg" alt="" class="img-fluid visually-hidden" id="form__3-4__photo-3">
+							<img src="./svg/photo_camera_24dp.svg" alt="" class="img-fluid visually-hidden" id="form__3-4__photo-4">
+						</div>
+
+						<div class="input-group mt-4">
+							<textarea name="form__3-4__textarea-1" id="form__3-4__textarea-1" class="form-control form__3-4__textarea" placeholder="Комментарий" cols="30" rows="5"></textarea>
+						</div>
+
+						<div class="input-group mt-2">
+							<input type="text" name="form__3-4__input-g1-1" id="form__3-4__input-g1-1" class="form-control text-center bg-warning mt-1 form__3-4__input" value="Автопоезд может двигаться дальше?" disabled>
+						</div>
+
+						<div class="d-flex justify-content-around mb-3 mt-2">
+							<div class="flex-grow-1 px-2">
+								<input type="radio" name="form__3-4__radio-g1" id="form__3-4__radio-g1-1" class="btn-check form__3-4__radio" value="Да">
+								<label for="form__3-4__radio-g1-1" class="btn btn-outline-success w-100 form__3-4__label">Да</label>
+							</div>
+							<div class="flex-grow-1 px-2">
+								<input type="radio" name="form__3-4__radio-g1" id="form__3-4__radio-g1-2" class="btn-check form__3-4__radio" value="Нет">
+								<label for="form__3-4__radio-g1-2" class="btn btn-outline-danger w-100 form__3-4__label">Нет</label>
+							</div>
+						</div>
+
+						<div class="input-group mt-4">
+							<textarea name="form__3-4__textarea-2" id="form__3-4__textarea-2" class="form-control form__3-4__textarea" placeholder="Комментарий по движению автопоезда, почему изменил решение" cols="30" rows="5"></textarea>
+						</div>
+
+						<div class="input-group mt-2">
+							<input type="text" name="form__3-4__input-g2-1" id="form__3-4__input-g2-1" class="form-control text-center bg-warning mt-1 form__3-4__input" value="Требуется эвакуатор?" disabled>
+						</div>
+
+						<div class="d-flex justify-content-around mb-3 mt-2">
+							<div class="form-check form-check-inline">
+								<input type="radio" name="form__3-4__radio-g2" id="form__3-4__radio-g2-1" class="form-check-input form__3-4__radio" value="Да">
+								<label for="form__3-4__radio-g2-1" class="form-check-label form__3-4__label">Да</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" name="form__3-4__radio-g2" id="form__3-4__radio-g2-2" class="form-check-input form__3-4__radio" value="Нет">
+								<label for="form__3-4__radio-g2-2" class="form-check-label form__3-4__label">Нет</label>
+							</div>
+						</div>
+
+						<div class="input-group mt-2">
+							<input type="text" name="form__3-4__input-g3-1" id="form__3-4__input-g3-1" class="form-control text-center bg-warning mt-1 form__3-4__input" value="Требуется перецеп?" disabled>
+						</div>
+						<div class="d-flex justify-content-around mb-3 mt-2">
+							<div class="form-check form-check-inline">
+								<input type="radio" name="form__3-4__radio-g3" id="form__3-4__radio-g3-1" class="form-check-input form__3-4__radio" value="Да">
+								<label for="form__3-4__radio-g3-1" class="form-check-label form__3-4__label">Да</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" name="form__3-4__radio-g3" id="form__3-4__radio-g3-2" class="form-check-input form__3-4__radio" value="Нет">
+								<label for="form__3-4__radio-g3-2" class="form-check-label form__3-4__label">Нет</label>
+							</div>
+						</div>
+
+						<div class="input-group mt-2">
+							<input type="text" name="form__3-4__input-g4-1" id="form__3-4__input-g4-1" class="form-control text-center bg-warning mt-1 form__3-4__input" value="Требуется перегруз?" disabled>
+						</div>
+						<div class="d-flex justify-content-around mb-3 mt-2">
+							<div class="form-check form-check-inline">
+								<input type="radio" name="form__3-4__radio-g4" id="form__3-4__radio-g4-1" class="form-check-input form__3-4__radio" value="Да">
+								<label for="form__3-4__radio-g4-1" class="form-check-label form__3-4__label">Да</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" name="form__3-4__radio-g4" id="form__3-4__radio-g4-2" class="form-check-input form__3-4__radio" value="Нет">
+								<label for="form__3-4__radio-g4-2" class="form-check-label form__3-4__label">Нет</label>
+							</div>
+						</div>
+
+					<div class="btn-group w-100 mt-4" role="group">
+						<button type="button" name="form__3-4__button-back" id="form__3-4__button-back" class="btn btn-lg btn-primary form__3-4__button" value="back">Назад</button>
+						<button type="button" name="form__3-4__button-next" id="form__3-4__button-next" class="btn btn-lg btn-primary active form__3-4__button" value="next">Согласовать с логистом</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

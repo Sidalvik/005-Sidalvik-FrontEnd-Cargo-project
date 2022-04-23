@@ -1,0 +1,47 @@
+:root {
+	--table-bg: #ffffff;
+	--thead-bg: #ffc107;
+	--border-color: #dee2e6;
+	--table-min-width: 1100px;
+}
+
+thead {
+	background-color: var(--thead-bg);
+}
+
+thead p {
+	margin: 0;
+}
+
+.table {
+	min-width: var(--table-min-width);
+}
+
+.date {
+	width: 12%;
+}
+
+.group {
+	width: 20%;
+}
+
+.file-doc {
+	width: 35%;
+}
+
+.btn-collapseGroups,
+#collapseGroups {
+	width: 100%;
+}
+
+table input {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+	color: inherit;
+	text-align: inherit;
+}

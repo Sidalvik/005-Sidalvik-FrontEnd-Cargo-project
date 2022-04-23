@@ -1,0 +1,40 @@
+/*Ситили для таблицы "Запросы на выходные"*/
+
+:root {
+	--min-width-column: 7.2rem;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	padding: 2.5rem 1.5rem;
+}
+
+h1 {
+	margin-bottom: 0.5em;
+}
+
+table col {
+	min-width: var(--min-width-column);
+}
+
+table input {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+}
+
+table button {
+	width: 100%;
+}
+
+table tr > td:last-child {
+	padding: 0;
+}
+

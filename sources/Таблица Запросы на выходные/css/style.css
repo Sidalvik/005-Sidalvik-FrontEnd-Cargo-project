@@ -1,0 +1,57 @@
+/*Ситили для таблицы "Запросы на выходные"*/
+
+:root {
+	--min-width-column: 7.2rem;
+
+	--table-bg: #ffffff;
+	--thead-bg: #ffc107;
+	--border-color: #aaaaaa;
+	--table-min-width: 1200px;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	padding: 2.5rem 1.5rem;
+}
+
+h1 {
+	margin-bottom: 0.5em;
+}
+
+table thead {
+	position: sticky;
+	top: 0;
+	background-color: var(--thead-bg);
+}
+
+table.table thead.head-stiky,
+table.table thead.head-stiky tr,
+table.table thead.head-stiky th {
+	border-top: none;
+}
+
+table col {
+	min-width: var(--min-width-column);
+}
+
+table input {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+}
+
+table button {
+	width: 100%;
+}
+
+table tr > td:last-child {
+	padding: 0;
+}
+

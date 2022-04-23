@@ -1,0 +1,55 @@
+
+.col-0-inner div {
+	padding: 0.5rem 0.3rem;
+}
+
+table thead tr th {
+	min-width: var(--min-fixit-col);
+}
+
+.col-0 {
+	min-width: var(--min-fixit-col-0);
+	padding: 0;
+}
+
+thead th {
+	border-top: none;
+}
+
+.col-0-inner {
+	display: flex;
+}
+
+.col-0-inner div:nth-child(1) {
+	width: 15%;
+}
+
+.col-0-inner div:nth-child(2) {
+	width: 45%;
+}
+
+.col-0-inner div:nth-child(3) {
+	width: 40%;
+}
+
+tbody {
+	font-size: 0.875rem;
+}
+
+thead .col-sticky .col-0-inner {
+	background-color: var(--thead-bg);
+	z-index: 2;
+}
+
+.col-0-inner div {
+	border-right: 1px solid var(--border-color);
+}
+
+.col-0-inner div:first-child {
+	border-left: 1px solid var(--border-color);
+}
+
+.col-0-inner:hover {
+	background-color: rgba(0, 0, 0, 0.075);
+}
+

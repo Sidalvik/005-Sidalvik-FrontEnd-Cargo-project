@@ -1,0 +1,73 @@
+:root {
+	--color1: #6ea8fe;
+	--color2: #8c68cd;
+	--color3: #fecba1;
+	--color4: #4dd4ac;
+	--black-color: #000000;
+	--white-color: #ffffff;
+	--bg-color: var(--white-color);
+	--min-width-column: 125px;
+}
+
+.vertical {
+	writing-mode: vertical-lr;
+	text-align: center;
+	/*transform: rotate(180deg);*/
+}
+
+col:nth-of-type(1) {
+	min-width: 3rem;
+}
+
+col:nth-of-type(n+2) {
+	min-width: var(--min-width-column);
+}
+
+
+tbody tr:nth-of-type(4n + 1) .person {
+	background-color: var(--color1);
+}
+
+tbody tr:nth-of-type(4n + 2) .person {
+	background-color: var(--color2);
+}
+
+tbody tr:nth-of-type(4n + 3) .person {
+	background-color: var(--color3);
+}
+
+tbody tr:nth-of-type(4n) .person {
+	background-color: var(--color4);
+}
+
+tbody tr:nth-of-type(13n) {
+	border-bottom-width: 2px;
+	border-bottom-color: var(--black-color);
+}
+
+/*td,
+th {
+	border-left-color: var(--black-color);
+	border-right-color: var(--black-color);
+}*/
+
+table input {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+}
+
+tbody tr > th  {
+	position: relative;
+	left: 0;
+}
+
+thead {
+	position: relative;
+	top: 0;
+	background-color: var(--bg-color);
+}

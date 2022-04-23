@@ -1,0 +1,91 @@
+:root {
+	--table-bg: #ffffff;
+	--thead-bg: #ffc107;
+	--border-color: #dee2e6;
+	--table-marked-bg: #6ea8fe;
+	--table-min-width: 1250px;
+	--bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	--color1: #6ea8fe;
+	--color2: #8c68cd;
+	--black-color: #000000;
+	--white-color: #ffffff;
+}
+
+.table-container {
+	min-width: var(--table-min-width);
+}
+
+.table .vertical {
+	margin: 0;
+	padding: 0.5em;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	writing-mode: vertical-lr;
+	text-align: start;
+	border-right: none;
+	/*transform: rotate(180deg);*/
+}
+
+.table tbody .vertical-1 {
+	background-color: var(--color1);
+}
+
+.table tbody .vertical-2 {
+	background-color: var(--color2);
+}
+
+.table input[type="number"] {
+	text-align: end;
+}
+
+.table thead th {
+	text-align: start;
+	vertical-align: middle;
+	background-color: var(--thead-bg);
+}
+
+.table tbody th {
+	text-align: end;
+	vertical-align: middle;
+}
+
+.table td {
+	vertical-align: middle;
+}
+
+.table .marked th {
+	font-weight: normal;
+	text-align: start;
+}
+
+.table .marked td {
+	background-color: var(--table-marked-bg);
+}
+
+.table td.total {
+	background-color: var(--table-bg);
+}
+
+.col-sticky-2 {
+	left: calc(3.75rem + 1px);
+}
+
+.table thead tr:nth-child(1) th {
+	border-bottom: none;
+}
+
+.table thead tr:nth-child(2) th {
+	border-top: none;
+}
+
+.text-end {
+	text-align: end;
+}
+
+.caption-top {
+	caption-side: top;
+}
+
+.table .total {
+	max-width: 10em;
+}
