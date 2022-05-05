@@ -1,0 +1,115 @@
+:root {
+	--table-bg: #ffffff;
+	--thead-bg: #ffc107;
+	--table-min-width: 1200px;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media  (max-width: 767px) {
+	html {
+		font-size: 75%;
+	}
+}
+
+body {
+	padding: 2.5rem 1.5rem;
+}
+
+h1 {
+	margin-bottom: 0.5em;
+}
+
+table {
+	table-layout: fixed;
+}
+
+
+.form__21 table .head-sticky th:nth-child(1) {
+	width: 6.4%;
+}
+
+.form__21 table .head-sticky th:nth-child(2) {
+	width: 7.2%;
+}
+
+.form__21 table .head-sticky th:nth-child(3) {
+	width: 12.2%;
+}
+
+.form__21 table .head-sticky th:nth-child(4) {
+	width: 7.4%;
+}
+
+.form__21 table .head-sticky th:nth-child(5) {
+	width: 10.8%;
+}
+
+.form__21 table .head-sticky th:nth-child(6) {
+	width: 9.7%;
+}
+
+.form__21 table .head-sticky th:nth-child(7) {
+	/*width: 7.2%;*/
+}
+
+
+
+table input {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+}
+
+@media screen {
+	table thead.head-sticky th {
+		background-color: var(--thead-bg);
+	}
+}
+
+.form__20-1 {
+	page-break-after: always
+}
+
+.form__20-3 {
+	min-width: 320px;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-top: 2em;
+	padding: 2em;
+	font-size: 87.5%;
+	border: 1px solid #dddddd;
+}
+
+.form__20-1 input,
+.form__20-3 input {
+	font: inherit;
+	text-align: center;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background-color: transparent;
+	outline: none;
+	transform: none;
+}
+
+#form__20-1__input-start-year,
+#form__20-1__input-end-year,
+#form__20-3__input-date-day,
+#form__20-3__input-date-year {
+	width: 3em;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+#form__20-1__input-start,
+#form__20-1__input-end {
+	flex-shrink: 0;
+	flex-grow: 1;
+}

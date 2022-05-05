@@ -1,0 +1,85 @@
+:root {
+	--table-bg: #ffffff;
+	--thead-bg: #ffc107;
+	--table-min-width: 1200px;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media  (max-width: 767px) {
+	html {
+		font-size: 75%;
+	}
+}
+
+body {
+	padding: 2.5rem 1.5rem;
+}
+
+h1 {
+	margin-bottom: 0.5em;
+}
+
+table {
+	table-layout: fixed;
+}
+
+table .head-sticky th:nth-child(1) {
+	width: 10%;
+}
+
+table .head-sticky th:nth-child(2) {
+	width: 11.7%;
+}
+
+table .head-sticky th:nth-child(3) {
+	width: 21.56%;
+}
+
+table .head-sticky th:nth-child(4) {
+	width: 12.24%;
+}
+
+table .head-sticky th:nth-child(5) {
+	width: 20.75%;
+}
+
+table .head-sticky th:nth-child(6) {
+	width: 13.17%;
+}
+
+table .head-sticky th:nth-child(7) {
+	width: 10.58%;
+}
+
+
+table.table th > p {
+	margin-bottom: 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+table input {
+	width: 100%;
+	padding: 0;
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: none;
+}
+
+@media screen {
+	table .head-sticky tr.tr-sticky {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+
+	}
+
+	table thead.head-sticky th {
+		background-color: var(--thead-bg);
+	}
+}

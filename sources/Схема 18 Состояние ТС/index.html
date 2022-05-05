@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<form class="container-fluid">
+	<form class="container-fluid my-3">
 		<h1 class="h1 text-center">Состояние ТС</h1>
 		<div class="d-flex flex-wrap mb-4 justify-content-between mx-auto top-toolbar">
 			<div class="card top-toolbar-element">
@@ -81,7 +81,7 @@
 			</div>
 		</div>
 
-		<div class="row dashboard d-flex flex-wrap align-items-start mt-4">
+		<div class="row dashboard align-items-start mt-4">
 			<div class="left-toolbar d-flex flex-wrap col-7 col-lg-2 py-2 order-lg-1">
 				<div class="card left-toolbar-element mb-3">
 					<div class="card-body text-center">
@@ -130,49 +130,49 @@
 				</div>
 			</div>
 
-			<div class="right-toolbar col-5 col-lg-2 py-2 order-lg-3">
-					<div class="card mb-3  right-toolbar-element" >
+			<div class="right-toolbar py-2 col-5 col-lg-2 order-lg-3">
+					<div class="card mb-3 p-2 right-toolbar-element" >
 					  <div class="row g-0 align-items-center">
-					    <div class="col-2">
+					    <div class="col-4 col-sm-2 mx-auto">
 					      <img src="./images/error.png" class="img-fluid rounded-start" alt="">
 					    </div>
-					    <div class="col-10">
-					      <div class="card-body">
-					        <p class="card-text">Ошибка.</p>
+					    <div class="col col-sm-10">
+					      <div class="card-body p-2">
+					        <p class="card-text">Ошибка</p>
 					      </div>
 					    </div>
 					  </div>
 					</div>
-					<div class="card mb-3  right-toolbar-element" >
+					<div class="card mb-3 p-2 right-toolbar-element" >
 					  <div class="row g-0 align-items-center">
-					    <div class="col-2">
+					    <div class="col-4 col-sm-2 mx-auto">
 					      <img src="./images/fuel.png" class="img-fluid rounded-start" alt="">
 					    </div>
-					    <div class="col-10">
-					      <div class="card-body">
-					        <p class="card-text">Слив ДТ.</p>
+					    <div class="col col-sm-10">
+					      <div class="card-body p-2">
+					        <p class="card-text">Слив ДТ</p>
 					      </div>
 					    </div>
 					  </div>
 					</div>
-					<div class="card mb-3  right-toolbar-element" >
+					<div class="card mb-3 p-2 right-toolbar-element" >
 					  <div class="row g-0 align-items-center">
-					    <div class="col-2">
+					    <div class="col-4 col-sm-2 mx-auto">
 					      <img src="./images/over.png" class="img-fluid rounded-start" alt="">
 					    </div>
-					    <div class="col-10">
-					      <div class="card-body">
-					        <p class="card-text">Перегруз по осям.</p>
+					    <div class="col col-sm-10">
+					      <div class="card-body p-2">
+					        <p class="card-text">Перегруз по осям</p>
 					      </div>
 					    </div>
 					  </div>
 					</div>
 			</div>
 
-			<div class="center-toolbar col-12 col-lg-8 py-2 order-lg-2">
-				<div class="card center-toolbar-element left-side p-2 mb-3">
-					<img src="./images/track-left.png" class="card-img-top" alt="">
-					<div class="card-wrap">
+			<div class="center-toolbar col-md-12 col-lg-8 py-2 my-4 m-md-0 order-lg-2 d-flex flex-nowrap flex-md-wrap">
+				<div class="center-toolbar-element left-side p-md-2 mb-md-3">
+					<img src="./images/track-left.png" class="card-img-top d-none d-md-block" alt="">
+					<div class="card-wrap text-nowrap">
 						<div class="block-0">
 							<div class="block-row">
 								<p>Колодки</p>
@@ -196,6 +196,9 @@
 							</div>
 							<div class="block-row">
 								<p class="parameter"><output name="left__parameter__output-1-3" id="left__parameter__output-1-3">0т</output></p>
+							</div>
+							<div class="block-row">
+								<p class="parameter"><output name="left__parameter__output-1-4" id="left__parameter__output-1-4"></output></p>
 							</div>
 						</div>
 						<div class="block-2">
@@ -222,6 +225,9 @@
 							<div class="block-row">
 								<p class="parameter"><output name="left__parameter__output-3-3" id="left__parameter__output-3-3">0т</output></p>
 							</div>
+							<div class="block-row">
+								<p class="parameter"><output name="left__parameter__output-3-4" id="left__parameter__output-3-4"></output></p>
+							</div>
 						</div>
 						<div class="block-4">
 							<div class="block-row">
@@ -232,6 +238,9 @@
 							</div>
 							<div class="block-row">
 								<p class="parameter"><output name="left__parameter__output-4-3" id="left__parameter__output-4-3">0т</output></p>
+							</div>
+							<div class="block-row">
+								<p class="parameter"><output name="left__parameter__output-4-4" id="left__parameter__output-4-4"></output></p>
 							</div>
 						</div>
 						<div class="block-5">
@@ -244,12 +253,15 @@
 							<div class="block-row">
 								<p class="parameter"><output name="left__parameter__output-5-3" id="left__parameter__output-5-3">0т</output></p>
 							</div>
+							<div class="block-row">
+								<p class="parameter"><output name="left__parameter__output-5-4" id="left__parameter__output-5-4"></output></p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="card center-toolbar-element right-side p-2">
-					<img src="./images/track-right.png" class="card-img-top" alt="">
-					<div class="card-wrap">
+				<div class="center-toolbar-element right-side p-md-2">
+					<img src="./images/track-right.png" class="card-img-top d-none d-md-block" alt="">
+					<div class="card-wrap text-nowrap">
 						<div class="block-5">
 							<div class="block-row">
 								<p class="parameter"><output name="right__parameter__output-5-1" id="right__parameter__output-5-1">100%</output></p>
