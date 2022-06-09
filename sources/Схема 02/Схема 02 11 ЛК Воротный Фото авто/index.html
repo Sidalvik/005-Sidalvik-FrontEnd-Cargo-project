@@ -11,7 +11,7 @@
   <!-- <link rel="stylesheet" href="./css/style.css"> -->
 
     <style>
-  	.col {
+  	.container {
   		max-width: 576px;
   	}	
 
@@ -24,22 +24,20 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row mt-4 mb-4">
+		<div class="row  mt-4 mb-2">
+			<h1 class="col mx-auto text-center h2">Общие фото тягача.</h1>
+		</div>
+		<div class="row mb-4">
 			<div class="col mx-auto">
 				<form name="form__2-11" class="w-100 pt-4 pb-4 d-flex flex-column form__2-11" method="post" enctype="multipart/form-data">
 					<div class="input-group mt-1">
-						<input type="text" name="form__2-11__input-1" id="form__2-11__input-1" class="form-control text-center bg-warning form__2-11__input" placeholder="н 320 ук716rus">
+						<select class="form-select bg-warning text-center form__2-11__select" name="form__2-11__select-1" id="form__2-11__select-1" aria-label="form__2-11__select-1">
+							<option disabled selected value="null">Выбрать авто...</option>
+							<option value="1">Авто 1</option>
+							<option value="2">Авто 2</option>
+							<option value="3">Авто 3</option>
+						  </select>
 					</div>
-					<div class="input-group mt-1">
-						<input type="text" name="form__2-11__input-2" id="form__2-11__input-2" class="form-control text-center bg-warning form__2-11__input" placeholder="8088 AA">
-					</div>
-					<div class="input-group mt-1">
-						<input type="text" name="form__2-11__input-3" id="form__2-11__input-3" class="form-control text-center bg-warning form__2-11__input" placeholder="" disabled>
-					</div>
-					<div class="input-group mt-4">
-						<input type="text" name="form__2-11__input-4" id="form__2-11__input-4" class="form-control text-center btn-primary form__2-11__input" value="Тягач" disabled>
-					</div>
-					<img src="./svg/photo_camera_24dp.svg" alt="Тягач фото" class="img-fluid visually-hidden form__2-11__img-1">
 					<div class="input-group mt-3 mb-3">
 						<input type="file" name="form__2-11__input-g1-1" id="form__2-11__input-g1-1" class="form-control form__2-11__input" multiple="">
 						 <button type="button" name="form__2-11__button-g1-1" id="form__2-11__button-g1-1" class="btn btn-primary visually-hidden form__2-11__button">Отправить</button>
@@ -62,33 +60,6 @@
 						<button type="button" name="form__2-11__button-g1-2" id="form__2-11__button-g1-2" class="btn btn-outline-primary form__2-11__button">Дополнительные поля</button>
 					</div>
 
-
-
-					<div class="input-group mt-4">
-						<input type="text" name="form__2-11__input-5" id="form__2-11__input-5" class="form-control text-center btn-primary form__2-11__input" value="ППЦ" disabled>
-					</div>
-					<img src="./svg/photo_camera_24dp.svg" alt="ППЦ фото" class="img-fluid visually-hidden form__2-11__img-2">
-					<div class="input-group mt-3 mb-3">
-						<input type="file" name="form__2-11__input-g2-1" id="form__2-11__input-g2-1" class="form-control form__2-11__input" multiple="">
-						 <button type="button" name="form__2-11__button-g2-1" id="form__2-11__button-g2-1" class="btn btn-primary visually-hidden  form__2-11__button">Отправить</button>
-					</div>
-					<div class="collapse" id="form__2-11__collapse-g2">
-						<div class="input-group mt-1 mb-3">
-							<input type="file" name="form__2-11__input-g2-2" id="form__2-11__input-g2-2" class="form-control form__2-11__input" multiple="">
-						</div>
-						<div class="input-group mt-1 mb-3">
-							<input type="file" name="form__2-11__input-g2-3" id="form__2-11__input-g2-3" class="form-control form__2-11__input" multiple="">
-						</div>
-						<div class="input-group mt-1 mb-3">
-							<input type="file" name="form__2-11__input-g2-4" id="form__2-11__input-g2-4" class="form-control form__2-11__input" multiple="">
-						</div>
-						<div class="input-group mt-1 mb-3">
-							<input type="file" name="form__2-11__input-g2-5" id="form__2-11__input-g2-5" class="form-control form__2-11__input" multiple="">
-						</div>
-					</div>
-					<div class="btn-group" data-bs-toggle="collapse" data-bs-target="#form__2-11__collapse-g2" aria-expanded="false" aria-controls="form__2-11__collapse-g2" role="group">
-						<button type="button" name="form__2-11__button-g2-2" id="form__2-11__button-g2-2" class="btn btn-outline-primary form__2-11__button">Дополнительные поля</button>
-					</div>
 
 					<div class="btn-group w-100 mt-auto pt-3" role="group">
 						<button type="button" name="form__2-11__button-back" id="form__2-11__button-back" class="btn btn-primary btn-lg form__2-11__button" value="back">Назад</button>

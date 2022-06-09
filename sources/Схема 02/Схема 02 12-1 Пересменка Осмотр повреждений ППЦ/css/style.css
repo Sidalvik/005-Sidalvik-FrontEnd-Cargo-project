@@ -1,0 +1,21 @@
+:root {
+	--color1: #6ea8fe;
+	--color2: #8c68cd;
+	--color3: #fecba1;
+	--color4: #4dd4ac;
+	--black-color: #000000;
+	--white-color: #ffffff;
+	--bg-color: var(--white-color);
+	--min-width-container: 320px;
+	--max-width-container: 540px; 
+}
+
+.container-fluid {
+	min-width: var(--min-width-container);
+	max-width: var(--max-width-container);
+}
+
+
+.form-check {
+	margin-bottom: 0.5em;
+}

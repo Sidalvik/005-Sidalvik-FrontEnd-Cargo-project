@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Приём/передача ППЦ</title>
+		          <!-- Bootstrap CSS + JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <style>
+  	.container {
+  		max-width: 576px;
+  	}
+  </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row  mt-4 mb-2">
+			<h1 class="col mx-auto text-center h2">Приём/передача ППЦ.</h1>
+		</div>
+		<div class="row mt-2 mb-4">
+			<div class="col mx-auto">
+				<form name="form__2-7-2" id="form__2-7-2" class="form__2-7-2">
+					<div class="input-group mt-1">
+						<select class="form-select bg-warning text-center form__2-7-2__select" name="form__2-7-2__select-1" id="form__2-7-2__select-1" aria-label="form__2-7-2__select-1">
+							<option disabled selected value="null">Выбрать ППЦ...</option>
+							<option value="1">ППЦ 1</option>
+							<option value="2">ППЦ 2</option>
+							<option value="3">ППЦ 3</option>
+						  </select>
+					</div>
+
+					<div class="input-group mt-1">
+						<input type="datetime-local" name="form__2-7-2__input-1" id="form__2-7-2__input-1" class="form-control text-center form__2-7-2__input now" required>
+					</div>
+					<div class="input-group mt-1">
+						<select class="form-select text-center form__2-7-2__select" name="form__2-7-2__select-2" id="form__2-7-2__select-2" aria-label="form__2-7-2__select-2">
+							<option disabled selected value="null">Выбрать базу...</option>
+							<option value="База-1">База-1</option>
+							<option value="База-2">База-2</option>
+							<option value="База-3">База-3</option>
+						</select>
+					</div>
+					<div class="input-group mt-1 mb-4">
+						<select class="form-select form__2-7-2__select" name="form__2-7-2__select-3" id="form__2-7-2__select-3" aria-label="form__2-7-2__select-3">
+							<option disabled selected value="null">Выбрать колонного...</option>
+							<option value="1">Колонный 1</option>
+							<option value="2">Колонный 2</option>
+							<option value="3">Колонный 3</option>
+						  </select>
+					</div>
+
+					<div class="input-group mt-1">
+						<select class="form-select bg-primary text-white form__2-7-2__select" name="form__2-7-2__select-4" id="form__2-7-2__select-4" aria-label="form__2-7-2__select-4">
+							<option disabled selected value="null">Сдает водитель...</option>
+							<option value="водитель1">Грузовой Тягач Прицепович</option>
+							<option value="водитель2">Морозов Дизель Рефрежераторович</option>
+							<option value="водитель3">Третий Водитель Батькович</option>
+						</select>
+					</div>
+					<div class="input-group mt-1">
+						<input type="tel" name="form__2-7-2__input-2" id="form__2-7-2__input-2" class="form-control text-center form__2-7-2__input" placeholder="Телефон сдающего водителя">
+					</div>
+
+					<div class="card mt-1">
+						<div class="card-body">
+							<p class="card-title text-center mb-3">Водитель на осмотре?</p>
+							<div class="d-flex justify-content-around fs-5" role="radiogroup">
+								<div class="form-check form-check-inline">
+									<input type="radio" name="form__2-7-2__radio-g1" id="form__2-7-2__radio-g1-1" class="form-check-input form__2-7-2__radio" value="Да" required>
+									<label for="form__2-7-2__radio-g1-1" class="form-check-label d-inline form__2-7-2__label">Да</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" name="form__2-7-2__radio-g1" id="form__2-7-2__radio-g1-2" class="form-check-input form__2-7-2__radio" value="Нет" required>
+									<label for="form__2-7-2__radio-g1-2" class="form-check-label d-inline form__2-7-2__label">Нет</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-group mt-3">
+						<select class="form-select bg-primary text-white form__2-7-2__select" name="form__2-7-2__select-5" id="form__2-7-2__select-5" aria-label="form__2-7-2__select-5">
+							<option disabled selected value="null">Принимает водитель...</option>
+							<option value="водитель1">Грузовой Тягач Прицепович</option>
+							<option value="водитель2">Морозов Дизель Рефрежераторович</option>
+							<option value="водитель3">Третий Водитель Батькович</option>
+						</select>
+					</div>
+					<div class="input-group mt-1">
+						<input type="text" name="form__2-7-2__input-3" id="form__2-7-2__input-3" class="form-control text-center form__2-7-2__input" placeholder="Телефон принимающего водителя">
+					</div>
+					<div class="card mt-1 mb-4">
+						<div class="card-body">
+							<p class="card-title text-center mb-3">Водитель на осмотре?</p>
+							<div class="d-flex justify-content-around fs-5" role="radiogroup">
+								<div class="form-check form-check-inline">
+									<input type="radio" name="form__2-7-2__radio-g2" id="form__2-7-2__radio-g2-1" class="form-check-input form__2-7-2__radio" value="Да" required>
+									<label for="form__2-7-2__radio-g2-1" class="form-check-label form__2-7-2__label">Да</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" name="form__2-7-2__radio-g2" id="form__2-7-2__radio-g2-2" class="form-check-input form__2-7-2__radio" value="Нет" required>
+									<label for="form__2-7-2__radio-g2-2" class="form-check-label form__2-7-2__label">Нет</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-grid gap-2 mt-4 mb-3">
+						<button type="button" name="form__2-7-2__button-1" id="form__2-7-2__button-1" class="btn btn-outline-primary btn-lg mb-2 form__2-7-2__button" value="Подтверждаю">Подтверждаю</button>
+						<button type="button" name="form__2-7-2__button-2" id="form__2-7-2__button-2" class="btn btn-primary btn-lg mt-2 form__2-7-2__button" value="Начать приём/передачу ППЦ">Начать приём/передачу ППЦ</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		const date = new Date();
+		const twoDigits = (number) => (number < 10) ? '0' + number.toString() : number.toString();
+		let valueString = date.getFullYear().toString();
+		valueString = valueString.concat('-', twoDigits(date.getMonth()), '-', twoDigits(date.getDate()), 'T', twoDigits(date.getHours()), ':', twoDigits(date.getMinutes()));
+		document.querySelectorAll('input[type="datetime-local"].now').forEach((item) => item.value = valueString);
+	</script>
+</body>
+</html>

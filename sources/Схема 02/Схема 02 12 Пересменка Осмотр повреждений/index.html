@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Осмотр повреждений</title>
+	<title>Осмотр повреждений тягача</title>
 		          <!-- Bootstrap CSS + JS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -12,24 +12,17 @@
 </head>
 <body>
 	<div class="container-fluid mx-auto">
-		<h1 class="h5 text-center mb-2">Осмотр повреждений</h1>
+		<div class="row mt-4 mb-4">
+			<h1 class="h5 text-center mb-2">Осмотр повреждений тягача</h1>
+		</div>
 		<form name="form__2-12" class="w-100 form__2-12" method="post" enctype="multipart/form-data">
 			<div class="input-group">
-				<input type="text" name="form__2-12__input-1" id="form__2-12__input-1" class="form-control bg-warning text-center form__2-12__input " placeholder="н 320 ук716rus" disabled>
+				<input type="text" name="form__2-12__input-1" id="form__2-12__input-1" class="form-control bg-warning text-center form__2-12__input " placeholder="гос. номер">
 			</div>
-			<div class="input-group">
-				<input type="text" name="form__2-12__input-2" id="form__2-12__input-2" class="form-control bg-warning text-center form__2-12__input" placeholder="8088 AA" disabled>
-			</div>
-			<div class="input-group">
-				<input type="text" name="form__2-12__input-3" id="form__2-12__input-3" class="form-control text-center form__2-12__input" placeholder="" disabled>
-			</div>
-
 			<div class="d-grid gap-2 mt-2">
-				<button class="btn btn-primary btn-block dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-truck" aria-expanded="true" aria-controls="collapse-truck">Тягач</button>
+				<button class="btn btn-primary btn-block dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-truck" aria-expanded="true" aria-controls="collapse-truck">Тягач. Обнаружены повреждения</button>
 				<div class="collapse show" id="collapse-truck">
 					<div class="card card-body" role="list">
-						<!-- .form-check[role=listitem data-bs-toggle=collapse data-bs-target=#collapse-track-$ aria-expanded=false aria-controls=collapse-track-$]*34>input.form-check-input[type=checkbox value= id=truckCheck-$]+label.form-check-label[for=truckCheck-$]>{$. } -->
-
 						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-track-1" aria-expanded="false" aria-controls="collapse-track-1">
 							<input type="checkbox" class="form-check-input" value="" id="truckCheck-1" >
 							<label for="truckCheck-1" class="form-check-label">1. Трещина на лобовом стекле</label>
@@ -169,11 +162,10 @@
 						</div>
 
 						<div class="btn-group dropup mt-3">
-							<button class="btn btn-outline-primary btn-block dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-truck" aria-expanded="false" aria-controls="collapse-truck">Тягач</button>
+							<button class="btn btn-outline-primary btn-block dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-truck" aria-expanded="false" aria-controls="collapse-truck">Тягач. Обнаружены повреждения</button>
 						</div>
 				  </div>
 				</div>
-				 <!-- .collapse*34[id=collapse-track-$]>.card.card-body>p.h6.text-center{$. }+.input-group>input.form-control[type=file id=inputFile-track-$ name=inputFile-track-$ multiple]+label.input-group-text[for=inputFile-track-$]{Загрузить} -->
 				<div class="collapse" id="collapse-track-1">
 				 	<div class="card card-body">
 				 		<p class="h6 text-center">1. Трещина на лобовом стекле </p>
@@ -181,6 +173,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-1" name="inputFile-track-1" multiple>
 				 			<label for="inputFile-track-1" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-1" name="text-track-1" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-2">
@@ -190,6 +185,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-2" name="inputFile-track-2" multiple>
 				 			<label for="inputFile-track-2" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-2" name="text-track-2" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-3">
@@ -199,6 +197,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-3" name="inputFile-track-3" multiple>
 				 			<label for="inputFile-track-3" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-3" name="text-track-3" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-4">
@@ -208,6 +209,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-4" name="inputFile-track-4" multiple>
 				 			<label for="inputFile-track-4" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-4" name="text-track-4" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-5">
@@ -217,6 +221,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-5" name="inputFile-track-5" multiple>
 				 			<label for="inputFile-track-5" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-5" name="text-track-5" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-6">
@@ -226,6 +233,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-6" name="inputFile-track-6" multiple>
 				 			<label for="inputFile-track-6" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-6" name="text-track-6" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-7">
@@ -235,6 +245,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-7" name="inputFile-track-7" multiple>
 				 			<label for="inputFile-track-7" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-7" name="text-track-7" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-8">
@@ -244,6 +257,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-8" name="inputFile-track-8" multiple>
 				 			<label for="inputFile-track-8" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-8" name="text-track-8" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-9">
@@ -253,6 +269,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-9" name="inputFile-track-9" multiple>
 				 			<label for="inputFile-track-9" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-9" name="text-track-9" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-10">
@@ -262,6 +281,9 @@
 				 			<input type="file" class="form-control" id="inputFile-track-10" name="inputFile-track-10" multiple>
 				 			<label for="inputFile-track-10" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-10" name="text-track-10" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-11">
@@ -270,6 +292,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-11" name="inputFile-track-11" multiple><label for="inputFile-track-11" class="input-group-text">Загрузить</label>
 				 		</div>
+ 						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-11" name="text-track-11" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-12">
@@ -278,6 +303,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-12" name="inputFile-track-12" multiple><label for="inputFile-track-12" class="input-group-text">Загрузить</label>
 				 		</div>
+ 						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-12" name="text-track-12" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-13">
@@ -286,6 +314,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-13" name="inputFile-track-13" multiple><label for="inputFile-track-13" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-13" name="text-track-13" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-14">
@@ -294,6 +325,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-14" name="inputFile-track-14" multiple><label for="inputFile-track-14" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-14" name="text-track-14" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-15">
@@ -302,6 +336,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-15" name="inputFile-track-15" multiple><label for="inputFile-track-15" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-15" name="text-track-15" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-16">
@@ -310,6 +347,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-16" name="inputFile-track-16" multiple><label for="inputFile-track-16" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-16" name="text-track-16" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-17">
@@ -318,6 +358,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-17" name="inputFile-track-17" multiple><label for="inputFile-track-17" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-17" name="text-track-17" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-18">
@@ -326,6 +369,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-18" name="inputFile-track-18" multiple><label for="inputFile-track-18" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-18" name="text-track-18" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-19">
@@ -334,6 +380,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-19" name="inputFile-track-19" multiple><label for="inputFile-track-19" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-19" name="text-track-19" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-20">
@@ -342,6 +391,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-20" name="inputFile-track-20" multiple><label for="inputFile-track-20" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-20" name="text-track-20" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-21">
@@ -350,6 +402,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-21" name="inputFile-track-21" multiple><label for="inputFile-track-21" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-21" name="text-track-21" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-22">
@@ -358,6 +413,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-22" name="inputFile-track-22" multiple><label for="inputFile-track-22" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-22" name="text-track-22" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-23">
@@ -366,6 +424,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-23" name="inputFile-track-23" multiple><label for="inputFile-track-23" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-23" name="text-track-23" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-24">
@@ -374,6 +435,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-24" name="inputFile-track-24" multiple><label for="inputFile-track-24" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-24" name="text-track-24" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-25">
@@ -382,6 +446,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-25" name="inputFile-track-25" multiple><label for="inputFile-track-25" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-25" name="text-track-25" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-26">
@@ -390,6 +457,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-26" name="inputFile-track-26" multiple><label for="inputFile-track-26" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-26" name="text-track-26" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-27">
@@ -398,6 +468,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-27" name="inputFile-track-27" multiple><label for="inputFile-track-27" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-27" name="text-track-27" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-28">
@@ -406,6 +479,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-28" name="inputFile-track-28" multiple><label for="inputFile-track-28" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-28" name="text-track-28" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-29">
@@ -414,6 +490,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-29" name="inputFile-track-29" multiple><label for="inputFile-track-29" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-29" name="text-track-29" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-30">
@@ -422,6 +501,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-30" name="inputFile-track-30" multiple><label for="inputFile-track-30" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-30" name="text-track-30" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-31">
@@ -430,6 +512,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-31" name="inputFile-track-31" multiple><label for="inputFile-track-31" class="input-group-text">Загрузить</label>
 				 		</div>
+						 <div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-31" name="text-track-31" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-32">
@@ -438,6 +523,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-32" name="inputFile-track-32" multiple><label for="inputFile-track-32" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-32" name="text-track-32" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-33">
@@ -446,6 +534,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-33" name="inputFile-track-33" multiple><label for="inputFile-track-33" class="input-group-text">Загрузить</label>
 				 		</div>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-33" name="text-track-33" rows="2"></textarea>
+						</div>
 				 	</div>
 				 </div>
 				 <div class="collapse" id="collapse-track-34">
@@ -454,307 +545,9 @@
 				 		<div class="input-group">
 				 			<input type="file" class="form-control" id="inputFile-track-34" name="inputFile-track-34" multiple><label for="inputFile-track-34" class="input-group-text">Загрузить</label>
 				 		</div>
-				 	</div>
-				 </div>
-
-				<!-- -ППЦ- -->
-				<button class="btn btn-primary btn-block dropdown-toggle mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-trailer" aria-expanded="false" aria-controls="collapse-trailer">ППЦ</button>
-				<div class="collapse" id="collapse-trailer">
-					<div class="card card-body" role="list">
-						<!-- .form-check[role=listitem data-bs-toggle=collapse data-bs-target=#collapse-trailer-$ aria-expanded=false aria-controls=collapse-trailer-$]*22>input.form-check-input[type=checkbox value= id=trailerCheck-$]+label.form-check-label[for=trailerCheck-$]>{$. } -->
-						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-trailer-1" aria-expanded="false" aria-controls="collapse-trailer-1">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-1" >
-							<label for="trailerCheck-1" class="form-check-label">1. Поврежден тент с правой стороны</label>
+						<div class="input-group mt-1">
+							<textarea class="form-control" id="text-track-34" name="text-track-34" rows="2"></textarea>
 						</div>
-
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-2" aria-expanded="false" aria-controls="collapse-trailer-2">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-2" >
-							<label for="trailerCheck-2" class="form-check-label">2. Поврежден тент с левой стороны</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-3" aria-expanded="false" aria-controls="collapse-trailer-3">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-3">
-							<label for="trailerCheck-3" class="form-check-label">3. Поврежден правый отбойник</label>
-						</div>
-						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-trailer-4" aria-expanded="false" aria-controls="collapse-trailer-4">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-4">
-							<label for="trailerCheck-4" class="form-check-label">4. Поврежден левый отбойник</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-5" aria-expanded="false" aria-controls="collapse-trailer-5">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-5">
-							<label for="trailerCheck-5" class="form-check-label">5. Поврежден боковой габарит с правой стороны</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-6" aria-expanded="false" aria-controls="collapse-trailer-6">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-6">
-							<label for="trailerCheck-6" class="form-check-label">6. Поврежден боковой габарит с левой стороны</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-7" aria-expanded="false" aria-controls="collapse-trailer-7">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-7">
-							<label for="trailerCheck-7" class="form-check-label">7. Поврежден правый рожок</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-8" aria-expanded="false" aria-controls="collapse-trailer-8">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-8">
-							<label for="trailerCheck-8" class="form-check-label">8. Поврежден левый рожок</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-9" aria-expanded="false" aria-controls="collapse-trailer-9">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-9">
-							<label for="trailerCheck-9" class="form-check-label">9. Поврежден правый фонарь</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-10" aria-expanded="false" aria-controls="collapse-trailer-10">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-10">
-							<label for="trailerCheck-10" class="form-check-label">10. Поврежден левый фонарь</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-11" aria-expanded="false" aria-controls="collapse-trailer-11">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-11">
-							<label for="trailerCheck-11" class="form-check-label">11. Поврежден задний правый отбойник</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-12" aria-expanded="false" aria-controls="collapse-trailer-12">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-12">
-							<label for="trailerCheck-12" class="form-check-label">12. Поврежден задний левый отбойник</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-13" aria-expanded="false" aria-controls="collapse-trailer-13">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-13">
-							<label for="trailerCheck-13" class="form-check-label">13. Поврежден задний бампер</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-14" aria-expanded="false" aria-controls="collapse-trailer-14">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-14">
-							<label for="trailerCheck-14" class="form-check-label">14. Повреждена правая дверь</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-15" aria-expanded="false" aria-controls="collapse-trailer-15">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-15">
-							<label for="trailerCheck-15" class="form-check-label">15. Повреждена левая дверь</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-16" aria-expanded="false" aria-controls="collapse-trailer-16">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-16">
-							<label for="trailerCheck-16" class="form-check-label">16. Повреждена петля правой двери</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-17" aria-expanded="false" aria-controls="collapse-trailer-17">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-17">
-							<label for="trailerCheck-17" class="form-check-label">17. Повреждена петля левой двери</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-18" aria-expanded="false" aria-controls="collapse-trailer-18">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-18">
-							<label for="trailerCheck-18" class="form-check-label">18. Поврежден ящик</label>
-						</div>
-						<div role="listitem" class="form-check"  data-bs-toggle="collapse" data-bs-target="#collapse-trailer-19" aria-expanded="false" aria-controls="collapse-trailer-19">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-19">
-							<label for="trailerCheck-19" class="form-check-label">19. Повреждена защитная крышка правого фонаря</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-20" aria-expanded="false" aria-controls="collapse-trailer-20">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-20">
-							<label for="trailerCheck-20" class="form-check-label">20. Повреждена защитная крышка левого фонаря</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-21" aria-expanded="false" aria-controls="collapse-trailer-21">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-21">
-							<label for="trailerCheck-21" class="form-check-label">21. Нечитаемый гос. номер</label>
-						</div>
-						<div role="listitem" class="form-check" data-bs-toggle="collapse" data-bs-target="#collapse-trailer-22" aria-expanded="false" aria-controls="collapse-trailer-22">
-							<input type="checkbox" class="form-check-input" value="" id="trailerCheck-22">
-							<label for="trailerCheck-22" class="form-check-label">22. Нет рекламы</label>
-						</div>
-
-						<div class="btn-group dropup mt-3">
-							<button class="btn btn-outline-primary btn-block dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-trailer" aria-expanded="false" aria-controls="collapse-trailer">ППЦ</button>
-						</div>
-				  </div>
-				</div>
-				
-				 <!-- .collapse*22[id=collapse-trailer-$]>.card.card-body>p.h6.text-center{$. }+.input-group>input.form-control[type=file id=inputFile-trailer-$ name=inputFile-trailer-$ multiple]+label.input-group-text[for=inputFile-trailer-$]{Загрузить} -->
-				<div class="collapse" id="collapse-trailer-1">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">1. Поврежден тент с правой стороны</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-1" name="inputFile-trailer-1" multiple>
-				 			<label for="inputFile-trailer-1" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-2">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">2. Поврежден тент с левой стороны</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-2" name="inputFile-trailer-2" multiple>
-				 			<label for="inputFile-trailer-2" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-3">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">3. Поврежден правый отбойник</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-3" name="inputFile-trailer-3" multiple>
-				 			<label for="inputFile-trailer-3" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-4">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">4. Поврежден левый отбойник</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-4" name="inputFile-trailer-4" multiple>
-				 			<label for="inputFile-trailer-4" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-5">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">5. Поврежден боковой габарит с правой стороны</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-5" name="inputFile-trailer-5" multiple>
-				 			<label for="inputFile-trailer-5" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-6">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">6. Поврежден боковой габарит с левой стороны</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-6" name="inputFile-trailer-6" multiple>
-				 			<label for="inputFile-trailer-6" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-7">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">7. Поврежден правый рожок</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-7" name="inputFile-trailer-7" multiple>
-				 			<label for="inputFile-trailer-7" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-8">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">8. Поврежден левый рожок</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-8" name="inputFile-trailer-8" multiple>
-				 			<label for="inputFile-trailer-8" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-9">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">9. Поврежден правый фонарь</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-9" name="inputFile-trailer-9" multiple>
-				 			<label for="inputFile-trailer-9" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-10">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">10. Поврежден левый фонарь</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-10" name="inputFile-trailer-10" multiple>
-				 			<label for="inputFile-trailer-10" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-11">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">11. Поврежден задний правый отбойник</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-11" name="inputFile-trailer-11" multiple>
-				 			<label for="inputFile-trailer-11" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-12">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">12. Поврежден задний левый отбойник</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-12" name="inputFile-trailer-12" multiple>
-				 			<label for="inputFile-trailer-12" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-13">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">13. Поврежден задний бампер</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-13" name="inputFile-trailer-13" multiple>
-				 			<label for="inputFile-trailer-13" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-14">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">14. Повреждена правая дверь</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-14" name="inputFile-trailer-14" multiple>
-				 			<label for="inputFile-trailer-14" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-15">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">15. Повреждена левая дверь</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-15" name="inputFile-trailer-15" multiple>
-				 			<label for="inputFile-trailer-15" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-16">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">16. Повреждена петля правой двери</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-16" name="inputFile-trailer-16" multiple>
-				 			<label for="inputFile-trailer-16" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-17">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">17. Повреждена петля левой двери</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-17" name="inputFile-trailer-17" multiple>
-				 			<label for="inputFile-trailer-17" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-18">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">18. Поврежден ящик</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-18" name="inputFile-trailer-18" multiple>
-				 			<label for="inputFile-trailer-18" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-19">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">19. Повреждена защитная крышка правого фонаря</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-19" name="inputFile-trailer-19" multiple>
-				 			<label for="inputFile-trailer-19" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-20">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">20. Повреждена защитная крышка левого фонаря</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-20" name="inputFile-trailer-20" multiple>
-				 			<label for="inputFile-trailer-20" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-21">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">21. Нечитаемый гос. номер</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-21" name="inputFile-trailer-21" multiple>
-				 			<label for="inputFile-trailer-21" class="input-group-text">Загрузить</label>
-				 		</div>
-				 	</div>
-				 </div>
-				 <div class="collapse" id="collapse-trailer-22">
-				 	<div class="card card-body">
-				 		<p class="h6 text-center">22. Нет рекламы</p>
-				 		<div class="input-group">
-				 			<input type="file" class="form-control" id="inputFile-trailer-22" name="inputFile-trailer-22" multiple>
-				 			<label for="inputFile-trailer-22" class="input-group-text">Загрузить</label>
-				 		</div>
 				 	</div>
 				 </div>
 			</div>

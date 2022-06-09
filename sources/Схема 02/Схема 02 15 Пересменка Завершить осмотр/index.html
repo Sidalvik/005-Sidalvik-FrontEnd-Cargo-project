@@ -11,7 +11,7 @@
   <!-- <link rel="stylesheet" href="./css/style.css"> -->
 
     <style>
-  	.col {
+  	.container {
   		max-width: 576px;
   	}
 
@@ -19,7 +19,6 @@
 	  	form {
 	  		min-height: calc(100vh - 5rem);
 	  	}
-
 	 }
   </style>
 </head>
@@ -29,24 +28,48 @@
 			<div class="col mx-auto">
 				<form  name="form__2-15" class="w-100 pt-4 pb-4 d-flex flex-column form__2-15">
 					<div class="input-group">
-						<input type="text" name="form__2-15__input-1" id="form__2-15__input-1" class="form-control text-center bg-warning form__2-15__input" placeholder="н 320 ук716rus">
+						<input type="text" name="form__2-15__input-1" id="form__2-15__input-1" class="form-control text-center bg-warning form__2-15__input" placeholder="гос. номер">
 					</div>
-					<div class="input-group mt-1">
-						<input type="text" name="form__2-15__input-2" id="form__2-15__input-2" class="form-control text-center bg-warning form__2-15__input" placeholder="8088 AA">
-					</div>
-					<div class="input-group mt-1">
-						<input type="text" name="form__2-15__input-3" id="form__2-15__input-3" class="form-control text-center bg-warning form__2-15__input" placeholder="">
+	
+					<div class="d-grid gap-2 mt-1">
+						<button type="button" name="form__2-15__button-truck" id="form__2-15__button-truck" class="btn btn-primary form__2-15__button" value="start-truck">Начать осмотр тягача</button>
 					</div>
 
-					<input type="text" name="form__2-15__input-g1" id="form__2-15__input-g1" class="form-control text-center btn-primary mt-2 form__2-15__input" value="Завершить осмотр?" disabled>
-					<div class="w-100 d-flex justify-content-around mb-3 mt-2">
-						<div class="form-check form-check-inline">
-							<input type="radio" name="form__2-15__radio-g1" id="form__2-15__radio-g1-1" class="form-check-input form__2-15__radio" value="Да">
-							<label for="form__2-15__radio-g1-1" class="form-check-label form__2-15__label">Да</label>
+					<div class="card mt-1 mb-4">
+						<div class="card-body">
+							<p class="card-title text-center mb-3">Завершить осмотр тягача?</p>
+							<div class="w-100 d-flex justify-content-around mt-2 fs-5">
+								<div class="form-check form-check-inline">
+									<input type="radio" name="form__2-15__radio-g1" id="form__2-15__radio-g1-1" class="form-check-input form__2-15__radio" value="Да">
+									<label for="form__2-15__radio-g1-1" class="form-check-label form__2-15__label">Да</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" name="form__2-15__radio-g1" id="form__2-15__radio-g1-2" class="form-check-input form__2-15__radio" value="нет">
+									<label for="form__2-15__radio-g1-2" class="form-check-label form__2-15__label">Нет</label>
+								</div>
+							</div>
 						</div>
-						<div class="form-check form-check-inline">
-							<input type="radio" name="form__2-15__radio-g1" id="form__2-15__radio-g1-2" class="form-check-input form__2-15__radio" value="нет">
-							<label for="form__2-15__radio-g1-2" class="form-check-label form__2-15__label">Нет</label>
+					</div>
+
+
+					
+					<div class="d-grid gap-2 mt-1">
+						<button type="button" name="form__2-15__button-truck" id="form__2-15__button-truck" class="btn btn-primary form__2-15__button" value="start-trailer">Начать осмотр ППЦ</button>
+					</div>
+
+					<div class="card mt-1 mb-4">
+						<div class="card-body">
+							<p class="card-title text-center mb-3">Завершить осмотр ППЦ?</p>
+							<div class="w-100 d-flex justify-content-around mt-2 fs-5">
+								<div class="form-check form-check-inline">
+									<input type="radio" name="form__2-15__radio-g2" id="form__2-15__radio-g2-1" class="form-check-input form__2-15__radio" value="Да">
+									<label for="form__2-15__radio-g2-1" class="form-check-label form__2-15__label">Да</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" name="form__2-15__radio-g2" id="form__2-15__radio-g2-2" class="form-check-input form__2-15__radio" value="нет">
+									<label for="form__2-15__radio-g2-2" class="form-check-label form__2-15__label">Нет</label>
+								</div>
+							</div>
 						</div>
 					</div>
 
