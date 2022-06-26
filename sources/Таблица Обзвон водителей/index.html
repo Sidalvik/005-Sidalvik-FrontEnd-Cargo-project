@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <!-- <link rel="stylesheet" href="./css-bs/bootstrap.min.css"> -->
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <script defer="defer" src="./scripts/script.js"></script>
+
+        <title>Разговоры с водителями</title>
+    </head>
+    <body>
+        <form
+            name="form-table"
+            id="form-table"
+            class="container-fluid"
+            method="post"
+            enctype="multipart/form-data">
+            <header class="header mb-3 mx-auto">
+                <div class="row">
+                    <h1 class="col text-center">Разговоры с водителями</h1>
+                </div>
+                <div class="date-nav d-flex justify-content-center align-items-baseline my-1">
+                    <button
+                        type="button"
+                        class="ml-auto btn btn-sml btn-outline-primary"
+                        name="previous-month">&lt;</button>
+                    <p class="mx-4 fs-5 text-center text-month">
+						<input type="hidden" name="form-table__current-month__input" id="form-table__current-month__input" value="">
+                        <output name="form-table__current-month" id="form-table__current-month">&lt;текущий месяц&gt;</output>
+                    </p>
+                    <button
+                        type="button"
+                        class="mr-auto btn btn-sml btn-outline-primary"
+                        name="next-month">&gt;</button>
+                </div>
+                <div class="filters">
+                    <table class="table table-sm table-striped w-auto">
+                        <thead>
+                            <tr class="bg-warning">
+                                <th scope="col">
+                                    <p class="m-0">Статус</p>
+                                </th>
+                                <th scope="col">
+                                    <p class="m-0">Количество</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-primary">
+                                <th scope="row">
+                                    <p class="m-0">Общее количество водителей</p>
+                                </th>
+                                <td>
+                                    <p class="m-0">
+                                        <output
+                                            class="filter__drivers"
+                                            name="filter__drivers-all"
+                                            id="filter__drivers-all">0</output>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p class="m-0">всего в работе</p>
+                                </th>
+                                <td>
+                                    <p class="m-0">
+                                        <output
+                                            class="filter__drivers"
+                                            name="filter__drivers-inwork"
+                                            id="filter__drivers-inwork">0</output>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <th scope="row">
+                                    <p class="m-0 fw-normal">по вождению</p>
+                                </th>
+                                <td>
+                                    <p class="m-0 fw-normal">
+                                        <output
+                                            class="filter__drivers status-1"
+                                            name="filters__driver-todrive"
+                                            id="filters__driver-todrive">0</output>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="table-warning">
+                                <th scope="row">
+                                    <p class="m-0 fw-normal">по по техн. причинам</p>
+                                </th>
+                                <td>
+                                    <p class="m-0 fw-normal">
+                                        <output
+                                            class="filter__driverse status-2"
+                                            name="filters__driver-tech"
+                                            id="filters__driver-tech">0</output>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="table-danger">
+                                <th scope="row">
+                                    <p class="m-0 fw-normal">не идущие на контакт</p>
+                                </th>
+                                <td>
+                                    <p class="m-0 fw-normal">
+                                        <output
+                                            class="filter__drivers status-3"
+                                            name="filters__driver-contactless"
+                                            id="filters__driver-contactless">0</output>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="fs-6">
+                                <th scope="row">
+                                    <p class="m-0 fw-normal">Осталось</p>
+                                </th>
+                                <td>
+                                    <p class="m-0 fw-normal">
+                                        <output
+                                            class="filter__drivers"
+                                            name="filter__drivers__other"
+                                            id="filter__drivers__other">0</output>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </header>
+            <div class="table-container">
+                <table class="table table-bordered table-hover">
+                    <col class="col-fio">
+                    <col class="col__auto-number">
+                    <col class="col-day1 col-days">
+                    <col class="col-day2 col-days">
+                    <col class="col-day3 col-days">
+                    <col class="col-day4 col-days">
+                    <col class="col-day5 col-days">
+                    <col class="col-day6 col-days">
+                    <col class="col-day7 col-days">
+                    <col class="col-day8 col-days">
+                    <col class="col-day9 col-days">
+                    <col class="col-day10 col-days">
+                    <col class="col-day11 col-days">
+                    <col class="col-day12 col-days">
+                    <col class="col-day13 col-days">
+                    <col class="col-day14 col-days">
+                    <col class="col-day15 col-days">
+                    <col class="col-day16 col-days">
+                    <col class="col-day17 col-days">
+                    <col class="col-day18 col-days">
+                    <col class="col-day19 col-days">
+                    <col class="col-day20 col-days">
+                    <col class="col-day21 col-days">
+                    <col class="col-day22 col-days">
+                    <col class="col-day23 col-days">
+                    <col class="col-day24 col-days">
+                    <col class="col-day25 col-days">
+                    <col class="col-day26 col-days">
+                    <col class="col-day27 col-days">
+                    <col class="col-day28 col-days">
+                    <col class="col-day29 col-days">
+                    <col class="col-day30 col-days">
+                    <col class="col-day31 col-days">
+                    <thead class="stiky-top head-sticky text-center">
+                        <tr class="bg-warning">
+                            <th scope="col" class="bg-warning person col-sticky col-fio">
+                                <p>Водитель Ф.И.О.</p>
+                            </th>
+                            <th scope="col">
+                                <p>Автомобиль №</p>
+                            </th>
+                            <th scope="col" class="text-center day-1">
+                                <p>1</p>
+                            </th>
+                            <th scope="col" class="text-center day-2">
+                                <p>2</p>
+                            </th>
+                            <th scope="col" class="text-center day-3">
+                                <p>3</p>
+                            </th>
+                            <th scope="col" class="text-center day-4">
+                                <p>4</p>
+                            </th>
+                            <th scope="col" class="text-center day-5">
+                                <p>5</p>
+                            </th>
+                            <th scope="col" class="text-center day-6">
+                                <p>6</p>
+                            </th>
+                            <th scope="col" class="text-center day-7">
+                                <p>7</p>
+                            </th>
+                            <th scope="col" class="text-center day-8">
+                                <p>8</p>
+                            </th>
+                            <th scope="col" class="text-center day-9">
+                                <p>9</p>
+                            </th>
+                            <th scope="col" class="text-center day-10">
+                                <p>10</p>
+                            </th>
+                            <th scope="col" class="text-center day-11">
+                                <p>11</p>
+                            </th>
+                            <th scope="col" class="text-center day-12">
+                                <p>12</p>
+                            </th>
+                            <th scope="col" class="text-center day-13">
+                                <p>13</p>
+                            </th>
+                            <th scope="col" class="text-center day-14">
+                                <p>14</p>
+                            </th>
+                            <th scope="col" class="text-center day-15">
+                                <p>15</p>
+                            </th>
+                            <th scope="col" class="text-center day-16">
+                                <p>16</p>
+                            </th>
+                            <th scope="col" class="text-center day-17">
+                                <p>17</p>
+                            </th>
+                            <th scope="col" class="text-center day-18">
+                                <p>18</p>
+                            </th>
+                            <th scope="col" class="text-center day-19">
+                                <p>19</p>
+                            </th>
+                            <th scope="col" class="text-center day-20">
+                                <p>20</p>
+                            </th>
+                            <th scope="col" class="text-center day-21">
+                                <p>21</p>
+                            </th>
+                            <th scope="col" class="text-center day-22">
+                                <p>22</p>
+                            </th>
+                            <th scope="col" class="text-center day-23">
+                                <p>23</p>
+                            </th>
+                            <th scope="col" class="text-center day-24">
+                                <p>24</p>
+                            </th>
+                            <th scope="col" class="text-center day-25">
+                                <p>25</p>
+                            </th>
+                            <th scope="col" class="text-center day-26">
+                                <p>26</p>
+                            </th>
+                            <th scope="col" class="text-center day-27">
+                                <p>27</p>
+                            </th>
+                            <th scope="col" class="text-center day-28">
+                                <p>28</p>
+                            </th>
+                            <th scope="col" class="text-center day-29">
+                                <p>29</p>
+                            </th>
+                            <th scope="col" class="text-center day-30">
+                                <p>30</p>
+                            </th>
+                            <th scope="col" class="text-center day-31">
+                                <p>31</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="table__body" class="table__body">
+                       
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

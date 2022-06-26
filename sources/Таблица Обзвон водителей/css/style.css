@@ -1,0 +1,91 @@
+:root {
+    --primary: #0d6efd;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --bg-color: var(--white-color);
+    --min-width-column: 10rem;
+    --table-bg: #ffffff;
+    --border-color: #dee2e6;
+    /* --table-min-width: 1300px; */
+}
+
+/* .table-container {
+	min-width: var(--table-min-width);
+} */
+
+.head-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.col-sticky {
+    position: sticky;
+	position: -webkit-sticky;
+    left: 0;
+    z-index: 100;
+}
+
+table input,
+table textarea {
+    width: 100%;
+    padding: 0;
+    font: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transform: none;
+    color: inherit;
+    text-align: inherit;
+}
+
+table textarea {
+    resize: none;
+}
+
+textarea.form-control {
+    min-width: 15rem;
+}
+
+.col-fio {
+    min-width: 10rem;
+}
+
+.col__auto-number {
+    min-width: 8em;
+}
+
+.status-bar {
+    transition: all 0.3s;
+}
+
+.status-bar:hover {
+    z-index: 999;
+    border-radius: 0.5rem;
+    border: 1px #bbbbbb solid;
+    background-color: #fefefe;
+    transform: scale(1.4);
+}
+
+@media (max-width: 767px) {
+    .status-bar:hover {
+        transform: scale(2);
+    }
+}
+
+.status-bar input[type="radio"] {
+    opacity: 0.15;
+}
+
+.status-bar:hover input[type="radio"] {
+    opacity: 0.3;
+}
+
+.status-bar input[type="radio"]:checked {
+    opacity: 0.85;
+}
+
+.status-bar input[type="radio"]:hover {
+    opacity: 1;
+}
