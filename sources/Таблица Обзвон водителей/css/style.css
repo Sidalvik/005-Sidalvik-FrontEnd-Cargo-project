@@ -50,10 +50,6 @@ table textarea {
     resize: none;
 }
 
-textarea.form-control {
-    min-width: 15rem;
-}
-
 .col-fio {
     min-width: 10rem;
 }
@@ -62,24 +58,24 @@ textarea.form-control {
     min-width: 8em;
 }
 
-.col-days input.person__day__radio[value="null"]:checked ~ .modal .person__day__radio-0__label {
+.col-days .person__day__radio[value="null"]:checked ~ .modal .person__day__radio-0__label {
     background-color: var(--bs-secondary);
     color: var(--white-color);
 }
-.col-days input.person__day__radio[value="status1"]:checked ~ .person__day__modal-button,
-.col-days input.person__day__radio[value="status1"]:checked ~ .modal .person__day__radio-1__label {
+.col-days .person__day__radio[value="status1"]:checked ~ .person__day__modal-button,
+.col-days .person__day__radio[value="status1"]:checked ~ .modal .person__day__radio-1__label {
     background-color: var(--bs-success);
     border-color: var(--bs-success);
     color: var(--white-color);
 }
-.col-days input.person__day__radio[value="status2"]:checked ~ .person__day__modal-button,
-.col-days input.person__day__radio[value="status2"]:checked ~ .modal .person__day__radio-2__label {
+.col-days .person__day__radio[value="status2"]:checked ~ .person__day__modal-button,
+.col-days .person__day__radio[value="status2"]:checked ~ .modal .person__day__radio-2__label {
     background-color: var(--bs-warning);
     border-color: var(--bs-warning);
     color: var(--black-color);
 }
-.col-days input.person__day__radio[value="status3"]:checked ~ .person__day__modal-button,
-.col-days input.person__day__radio[value="status3"]:checked ~ .modal .person__day__radio-3__label {
+.col-days .person__day__radio[value="status3"]:checked ~ .person__day__modal-button,
+.col-days .person__day__radio[value="status3"]:checked ~ .modal .person__day__radio-3__label {
     background-color: var(--bs-danger);
     border-color: var(--bs-danger);
     color: var(--white-color);

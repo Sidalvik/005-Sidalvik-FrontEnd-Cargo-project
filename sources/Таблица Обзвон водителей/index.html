@@ -20,139 +20,106 @@
 </head>
 
 <body>
-    <form name="form-table" id="form-table" class="container-fluid" method="post" enctype="multipart/form-data">
-        <header class="header mb-3 mx-auto">
+    <form name="form-table" id="form-table" class="w-100 vh-100" method="post" enctype="multipart/form-data">
+        <header class="header mb-3 mx-auto flex-shrink-0">
             <div class="row">
                 <h1 class="col text-center">Разговоры с водителями</h1>
             </div>
             <div class="date-nav d-flex justify-content-center align-items-baseline my-1">
                 <button type="button" class="ml-auto btn btn-sml btn-outline-primary"
-                    name="previous-month">&lt;</button>
+                    name="previous-month" id="previous-month">&lt;</button>
                 <p class="mx-4 fs-5 text-center text-month">
                     <input type="hidden" name="form-table__current-month__input" id="form-table__current-month__input"
                         value="">
-                    <output name="form-table__current-month" id="form-table__current-month">&lt;текущий месяц&gt;</output>
+                    <output name="form-table__current-month" id="form-table__current-month">&lt;текущий
+                        месяц&gt;</output>
                 </p>
-                <button type="button" class="mr-auto btn btn-sml btn-outline-primary" name="next-month">&gt;</button>
+                <button type="button" class="mr-auto btn btn-sml btn-outline-primary" name="next-month"  id="next-month">&gt;</button>
             </div>
-            <div class="filters">
-                <table class="table table-sm table-striped w-auto">
-                    <thead>
-                        <tr class="bg-warning">
-                            <th scope="col">
-                                <p class="m-0">Статус</p>
-                            </th>
-                            <th scope="col">
-                                <p class="m-0">Количество</p>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-primary">
-                            <th scope="row">
-                                <p class="m-0">Общее количество водителей</p>
-                            </th>
-                            <td>
-                                <p class="m-0">
-                                    <output class="filter__drivers" name="filter__drivers-all"
-                                        id="filter__drivers-all">0</output>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <p class="m-0">всего в работе</p>
-                            </th>
-                            <td>
-                                <p class="m-0">
-                                    <output class="filter__drivers" name="filter__drivers-inwork"
-                                        id="filter__drivers-inwork">0</output>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr class="table-success">
-                            <th scope="row">
-                                <p class="m-0 fw-normal">по вождению</p>
-                            </th>
-                            <td>
-                                <p class="m-0 fw-normal">
-                                    <output class="filter__drivers status-1" name="filters__driver-todrive"
-                                        id="filters__driver-todrive">0</output>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr class="table-warning">
-                            <th scope="row">
-                                <p class="m-0 fw-normal">по по техн. причинам</p>
-                            </th>
-                            <td>
-                                <p class="m-0 fw-normal">
-                                    <output class="filter__driverse status-2" name="filters__driver-tech"
-                                        id="filters__driver-tech">0</output>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr class="table-danger">
-                            <th scope="row">
-                                <p class="m-0 fw-normal">не идущие на контакт</p>
-                            </th>
-                            <td>
-                                <p class="m-0 fw-normal">
-                                    <output class="filter__drivers status-3" name="filters__driver-contactless"
-                                        id="filters__driver-contactless">0</output>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr class="fs-6">
-                            <th scope="row">
-                                <p class="m-0 fw-normal">Осталось</p>
-                            </th>
-                            <td>
-                                <p class="m-0 fw-normal">
-                                    <output class="filter__drivers" name="filter__drivers__other"
-                                        id="filter__drivers__other">0</output>
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table class="table table-sm table-striped w-auto">
+                <thead>
+                    <tr class="bg-warning">
+                        <th scope="col">
+                            <p class="m-0">Статус</p>
+                        </th>
+                        <th scope="col">
+                            <p class="m-0">Количество</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <th scope="row">
+                            <p class="m-0">Общее количество водителей</p>
+                        </th>
+                        <td>
+                            <p class="m-0">
+                                <output class="filter__drivers" name="filter__drivers-all"
+                                    id="filter__drivers-all">0</output>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p class="m-0">всего в работе</p>
+                        </th>
+                        <td>
+                            <p class="m-0">
+                                <output class="filter__drivers" name="filter__drivers-inwork"
+                                    id="filter__drivers-inwork">0</output>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">
+                            <p class="m-0 fw-normal">по вождению</p>
+                        </th>
+                        <td>
+                            <p class="m-0 fw-normal">
+                                <output class="filter__drivers status-1" name="filters__driver-todrive"
+                                    id="filters__driver-todrive">0</output>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="table-warning">
+                        <th scope="row">
+                            <p class="m-0 fw-normal">по по техн. причинам</p>
+                        </th>
+                        <td>
+                            <p class="m-0 fw-normal">
+                                <output class="filter__driverse status-2" name="filters__driver-tech"
+                                    id="filters__driver-tech">0</output>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <th scope="row">
+                            <p class="m-0 fw-normal">не идущие на контакт</p>
+                        </th>
+                        <td>
+                            <p class="m-0 fw-normal">
+                                <output class="filter__drivers status-3"
+                                    name="filters__driver-contactless"
+                                    id="filters__driver-contactless">0</output>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="fs-6">
+                        <th scope="row">
+                            <p class="m-0 fw-normal">Осталось</p>
+                        </th>
+                        <td>
+                            <p class="m-0 fw-normal">
+                                <output class="filter__drivers" name="filter__drivers__other"
+                                    id="filter__drivers__other">0</output>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </header>
-        <div class="table-container">
+        <div class="table-container flex-grow-1">
             <table id="main-table" class="table table-bordered table-hover">
-                <col class="col-fio">
-                <col class="col__auto-number">
-                <col class="col-day1 col-days">
-                <col class="col-day2 col-days">
-                <col class="col-day3 col-days">
-                <col class="col-day4 col-days">
-                <col class="col-day5 col-days">
-                <col class="col-day6 col-days">
-                <col class="col-day7 col-days">
-                <col class="col-day8 col-days">
-                <col class="col-day9 col-days">
-                <col class="col-day10 col-days">
-                <col class="col-day11 col-days">
-                <col class="col-day12 col-days">
-                <col class="col-day13 col-days">
-                <col class="col-day14 col-days">
-                <col class="col-day15 col-days">
-                <col class="col-day16 col-days">
-                <col class="col-day17 col-days">
-                <col class="col-day18 col-days">
-                <col class="col-day19 col-days">
-                <col class="col-day20 col-days">
-                <col class="col-day21 col-days">
-                <col class="col-day22 col-days">
-                <col class="col-day23 col-days">
-                <col class="col-day24 col-days">
-                <col class="col-day25 col-days">
-                <col class="col-day26 col-days">
-                <col class="col-day27 col-days">
-                <col class="col-day28 col-days">
-                <col class="col-day29 col-days">
-                <col class="col-day30 col-days">
-                <col class="col-day31 col-days">
                 <thead class="stiky-top head-sticky text-center">
                     <tr class="bg-warning">
                         <th scope="col" class="bg-warning person col-sticky col-fio">
@@ -256,106 +223,8 @@
                         </th>
                     </tr>
                 </thead>
-                <tbody id="table__body" class="table__body">
-                    <!-- <tr>
-                        <th class="col-sticky col-fio table-primary" scope="row">
-                            <p>
-                                <output class="person__input" name="person-1__fio" id="person-1__fio"></output>
-                            </p>
-                        </th>
-                        <td>
-                            <p>
-                                <output class="person__input col__auto-number" name="person-1__auto-number"
-                                    id="person-1__auto-number"></output>
-                            </p>
-                        </td>
-                        <td class="col-days">
-                            <input class="visually-hidden person__day__radio" type="radio"
-                                name="person-1__day-1__radio" id="person-1__day-1__radio-1" value="status1">
-                            <input class="visually-hidden person__day__radio" type="radio"
-                                name="person-1__day-1__radio" id="person-1__day-1__radio-2" value="status2">
-                            <input class="visually-hidden person__day__radio" type="radio"
-                                name="person-1__day-1__radio" id="person-1__day-1__radio-3" value="status3">
-                            <input class="visually-hidden person__day__radio" type="radio"
-                                name="person-1__day-1__radio" id="person-1__day-1__radio-0" value="null" checked>
-                            <button type="button" class="btn btn-outline-secondary person__day__modal-button"
-                                data-bs-toggle="modal" data-bs-target="#person-1__day-1__modal"
-                                name="person-1__day-1__button" id="person-1__day-1__button">
-                                1
-                            </button>
-                            <div class="modal fade" id="person-1__day-1__modal" tabindex="-1"
-                                aria-labelledby="person-1__day-1__modal__title" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header align-items-baseline">
-                                            <div class="modal-title">
-                                                <h2 class="h5 person__day__modal__title d-none" id="person-1__day-1__modal__title">Водитель</h2>
-                                                <p class="person__day__modal__auto-number d-none">Автомобиль:
-                                                    <output name="person-1__day-1__modal__output-auto"
-                                                        id="person-1__day-1__modal__output-auto">-</output>
-                                                </p>
-                                                <p class="mb-0 person__day__modal__day d-none">День:
-                                                    <output name="person-1__day-1__modal__output-day"
-                                                        id="person-1__day-1__modal__output-day">-</output>
-                                                </p>
-                                            </div>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <textarea class="form-control" name="person-1__day-1__text" id="person-1__day-1__text" cols="30"
-                                                    rows="4"></textarea>
-                                            <div class="btn-group mt-2" role="group" aria-label="status">
-                                                <label class="btn btn-sm btn-outline-success person__day__radio-1__label"
-                                                    for="person-1__day-1__radio-1">По вождению</label>
-                                                <label class="btn btn-sm btn-outline-warning person__day__radio-2__label"
-                                                    for="person-1__day-1__radio-2">По техн. причинам</label>
-                                                <label class="btn btn-sm btn-outline-danger person__day__radio-3__label"
-                                                    for="person-1__day-1__radio-3">Не идет на&nbsp;контакт</label>
-                                                <label class="btn btn-sm btn-outline-secondary person__day__radio-0__label"
-                                                    for="person-1__day-1__radio-0">не в&nbsp;работе</label>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-outline-primary"
-                                                data-bs-dismiss="modal">ОК</button>
-                                            <button type="button" class="btn btn-primary">Сохранить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr> -->
+                <tbody>
+                    
                 </tbody>
             </table>
         </div>
