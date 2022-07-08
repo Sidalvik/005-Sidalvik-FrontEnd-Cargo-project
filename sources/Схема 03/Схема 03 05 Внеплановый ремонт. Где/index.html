@@ -1,103 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Внеплановый ремонт. Регистрация.</title>
-		          <!-- Bootstrap CSS + JS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!-- Bootstrap CSS + JS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+	</script>
 
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+	<!-- <link rel="stylesheet" href="./css/style.css"> -->
+	<script defer src="./js/script.js"></script>
 
-    <style>
-  	.col {
-  		max-width: 576px;
-  	}
+	<style>
+		.col {
+			max-width: 576px;
+		}
 
-  	@media (orientation: portrait) {
-	  	form {
-	  		min-height: calc(100vh - 5rem);
-	  	}
-	 }
-  </style>
+		@media (orientation: portrait) {
+			form {
+				min-height: calc(100vh - 5rem);
+			}
+		}
+	</style>
 </head>
+
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col mx-auto">
-				<form  name="form__3-5" class="w-100 pt-4 pb-4 d-flex flex-column form__3-5">
+				<form name="form__3-5" class="w-100 pt-4 pb-4 d-flex flex-column form__3-5">
 					<div class="input-group mt-3">
-						<input type="text" name="form__3-5__input-1" id="form__3-5__input-1" class="form-control text-center bg-warning form__3-5__input" placeholder="н 320 ук 716rus" disabled>
+						<input type="text" name="form__3-5__input-1" id="form__3-5__input-1"
+							class="form-control text-center bg-warning form__3-5__input" placeholder="н 320 ук 716rus"
+							disabled>
 					</div>
 					<div class="input-group mt-1">
-						<input type="text" name="form__3-5__input-2" id="form__3-5__input-2" class="form-control text-center bg-warning form__3-5__input" placeholder="8456 ВА" disabled>
+						<input type="text" name="form__3-5__input-2" id="form__3-5__input-2"
+							class="form-control text-center bg-warning form__3-5__input" placeholder="8456 ВА" disabled>
 					</div>
 					<div class="input-group mt-1">
-						<input type="text" name="form__3-5__input-3" id="form__3-5__input-3" class="form-control text-center bg-warning form__3-5__input" placeholder="" disabled>
+						<input type="text" name="form__3-5__input-3" id="form__3-5__input-3"
+							class="form-control text-center bg-warning form__3-5__input" placeholder="" disabled>
 					</div>
 
-						<!-- Button trigger modal map-->
-					<button type="button" class="btn btn-outline-primary mt-3 form__3-5__button" id="form__3-5__button__modal-map" name="form__3-5__button__modal-map" data-bs-toggle="modal" data-bs-target="#modal-map">Где ремонтировать</button>
+					<!-- Button trigger modal map-->
+					<button type="button" class="btn btn-outline-primary mt-3 form__3-5__button"
+						id="form__3-5__button__modal-map" name="form__3-5__button__modal-map" data-bs-toggle="modal"
+						data-bs-target="#modal-map">Где ремонтировать</button>
 
-						<!-- Modal map -->
-						<div class="modal fade" id="modal-map" tabindex="-1" aria-labelledby="modal-map-label" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<!-- Modal map -->
+					<div class="modal fade" id="modal-map" tabindex="-1" aria-labelledby="modal-map-label"
+						aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 							<div class="modal-content">
 								<div class="modal-header">
-								<h5 class="modal-title" id="modal-map-label">Где ремонтировать</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									<h5 class="modal-title" id="modal-map-label">Где ремонтировать</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
-									<iframe class="w-100" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=52.12875366210938%2C55.61365008787245%2C52.65472412109376%2C55.8444821875883&amp;layer=mapnik&amp;marker=55.729236735188245%2C52.39173889160156" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=55.7292&amp;mlon=52.3917#map=11/55.7292/52.3917">Посмотреть более крупную карту</a></small>
+									<iframe class="w-100" height="350"
+										src="https://www.openstreetmap.org/export/embed.html?bbox=52.12875366210938%2C55.61365008787245%2C52.65472412109376%2C55.8444821875883&amp;layer=mapnik&amp;marker=55.729236735188245%2C52.39173889160156"
+										style="border: 1px solid #0d6efd"></iframe><br /><small><a
+											href="https://www.openstreetmap.org/?mlat=55.7292&amp;mlon=52.3917#map=11/55.7292/52.3917">Посмотреть
+											более крупную карту</a></small>
 								</div>
 								<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-								<button type="button" class="btn btn-primary" id="form__3-5__button__modal-map-go">Выбрать</button>
+									<button type="button" class="btn btn-secondary"
+										data-bs-dismiss="modal">Закрыть</button>
+									<button type="button" class="btn btn-primary"
+										id="form__3-5__button__modal-map-go">Выбрать</button>
 								</div>
 							</div>
-							</div>
 						</div>
+					</div>
 
 					<select class="mt-3 form-select" aria-label="counterparty-select">
 						<option selected disabled value="null">Контрагент...</option>
-					  </select>
+					</select>
 
 
-						<!-- Button trigger modal warrant--> 
-					<button type="button" class="btn btn-outline-primary mt-3 form__3-5__button" id="form__3-5__button__modal-warrant" name="form__3-5__button__modal-warrant" data-bs-toggle="modal" data-bs-target="#modal-warrant">Доверенность</button>
+					<!-- Button trigger modal warrant-->
+					<button type="button" class="btn btn-outline-primary mt-3 form__3-5__button"
+						id="form__3-5__button__modal-warrant" name="form__3-5__button__modal-warrant"
+						data-bs-toggle="modal" data-bs-target="#modal-warrant">Доверенность</button>
 
 					<!-- Modal warrant -->
-					<div class="modal fade" id="modal-warrant" tabindex="-1" aria-labelledby="modal-warrant-label" aria-hidden="true">
+					<div class="modal fade" id="modal-warrant" tabindex="-1" aria-labelledby="modal-warrant-label"
+						aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-						<div class="modal-content">
-							<div class="modal-header">
-							<h5 class="modal-title" id="modal-warrant-label">Доверенность</h5>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modal-warrant-label">Доверенность</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<input type="text" name="form__3-5__input-counterparty"
+										id="form__3-5__input-counterparty" class="form-control form__3-5__input"
+										placeholder="Контрагент...">
+									<input type="text" name="form__3-5__input-organization"
+										id="form__3-5__input-organization" class="form-control mt-2 form__3-5__input"
+										placeholder="Организация...">
+									<input type="text" name="form__3-5__input-person" id="form__3-5__input-person"
+										class="form-control mt-2 form__3-5__input" placeholder="Подотчетное лицо...">
+								</div>
+								<div class="modal-footer">
+									<div class="btn-group w-100 modal-warrant-disabled">
+										<button type="button" class="btn btn-primary w-50" id="form__3-5__button__modal-warrant-print"data-bs-toggle="tooltip" data-bs-placement="top" title="Печать доверенности М2" disabled>Печать<span class="opacity-50 d1-none"><br>Доверенность&nbsp;М2</span></button>
+										<button type="button" class="btn btn-primary w-50" id="form__3-5__button__modal-warrant-send" data-bs-toggle="tooltip" data-bs-placement="top" title="Отправить на e-mail с подписью и печатью" disabled>Отправить<span class="opacity-50 d1-none"><br>с&nbsp;подписью и&nbsp;печатью</span></button>
+									</div>
+									<p class="text-muted mb-0 ms-3 fs-6">* Печать и отправка с подписью и печатью доверенности по форме М2</p>
 
+									<div class="d-flex gap-2 justify-content-md-end">
+										<button type="button" class="btn btn-primary" id="form__3-5__button__modal-warrant-write" data-bs-toggle="tooltip"
+											data-bs-placement="top" title="Записать">Записать</button>
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Закрыть</button>
+									</div>
+								</div>
 							</div>
-							<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-							<button type="button" class="btn btn-primary" id="form__3-5__button__modal-map-go">Выбрать</button>
-							</div>
-						</div>
 						</div>
 					</div>
 
 					<div class="input-group my-3">
 						<span class="input-group-text" id="form__3-5__input-span">Заезд</span>
-						<input type="datetime-local" name="form__3-5__input-4" id="form__3-5__input-4" class="form-control text-center form__3-5__input">
+						<input type="datetime-local" name="form__3-5__input-4" id="form__3-5__input-4"
+							class="form-control text-center form__3-5__input">
 					</div>
 
 					<div class="btn-group w-100 mt-auto" role="group">
-						<button type="button" name="form__3-5__button-back" id="form__3-5__button-back" class="btn btn-lg btn-primary form__3-5__button" value="back">Назад</button>
-						<button type="button" name="form__3-5__button-next" id="form__3-5__button-next" class="btn btn-lg btn-primary active form__3-5__button" value="next">Зарегистрировать</button>
+						<button type="button" name="form__3-5__button-back" id="form__3-5__button-back"
+							class="btn btn-lg btn-primary form__3-5__button" value="back">Назад</button>
+						<button type="button" name="form__3-5__button-next" id="form__3-5__button-next"
+							class="btn btn-lg btn-primary active form__3-5__button"
+							value="next">Зарегистрировать</button>
 					</div>
 				</form>
 			</div>
 		</div>
-	</div>
+	</div>	
 </body>
+
 </html>
