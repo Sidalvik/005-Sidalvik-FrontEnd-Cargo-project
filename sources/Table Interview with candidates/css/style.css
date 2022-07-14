@@ -14,6 +14,13 @@
     --bs-danger: #dc3545;
 }
 
+table thead.head-sticky th {
+    background-color: var(--bs-yellow);
+    border-top: none;
+}
+table thead.head-sticky tr {
+    border-top: none;
+}
 
 .head-sticky {
     position: sticky;
@@ -24,13 +31,22 @@
 
 table input,
 table textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     width: 100%;
+    min-height: 4.8em;
     padding: 0;
     font: inherit;
-    background-color: transparent;
+    line-height: 1.2;
+    background-color: #ffffff01;
     border: none;
     outline: none;
     transform: none;
     color: inherit;
     text-align: inherit;
+}
+
+table textarea {
+    resize: none;
 }
