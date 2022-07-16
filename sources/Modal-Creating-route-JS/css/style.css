@@ -1,0 +1,82 @@
+:root {
+    --primary: #0d6efd;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --bg-color: var(--white-color);
+    --min-width-column: 10rem;
+    --table-bg: #ffffff;
+    --border-color: #dee2e6;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-darning: #ffc107;
+    --bs-danger: #dc3545;
+    /* --table-min-width: 1300px; */
+}
+
+/* .table-container {
+	min-width: var(--table-min-width);
+} */
+
+.head-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.col-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0;
+    z-index: 100;
+}
+
+table input,
+table textarea {
+    width: 100%;
+    padding: 0;
+    font: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transform: none;
+    color: inherit;
+    text-align: inherit;
+}
+
+table textarea {
+    resize: none;
+}
+
+.col-fio {
+    min-width: 10rem;
+}
+
+.col__auto-number {
+    min-width: 8em;
+}
+
+.col-days .person__day__radio[value="null"]:checked ~ .modal .person__day__radio-0__label {
+    background-color: var(--bs-secondary);
+    color: var(--white-color);
+}
+.col-days .person__day__radio[value="status1"]:checked ~ .person__day__modal-button,
+.col-days .person__day__radio[value="status1"]:checked ~ .modal .person__day__radio-1__label {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+    color: var(--white-color);
+}
+.col-days .person__day__radio[value="status2"]:checked ~ .person__day__modal-button,
+.col-days .person__day__radio[value="status2"]:checked ~ .modal .person__day__radio-2__label {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+    color: var(--black-color);
+}
+.col-days .person__day__radio[value="status3"]:checked ~ .person__day__modal-button,
+.col-days .person__day__radio[value="status3"]:checked ~ .modal .person__day__radio-3__label {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+    color: var(--white-color);
+}
