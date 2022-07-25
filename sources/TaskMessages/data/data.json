@@ -1,0 +1,32 @@
+[
+    {   
+        "UserId": "uid",
+        "id":"0",
+        "version": "0",
+        "lastUpdate": "2022-01-01T00:00",
+        "typeMessage": "0",
+        "statusMessage": "",
+        "titleMessage": "Заголовок сообщения. $Краткое описание задачи. :-)",
+        "bodyMessage": "Не следует, однако, забывать, что высококачественный прототип будущего проекта способствует подготовке и реализации первоочередных требований. Имеется спорная точка зрения, гласящая примерно следующее",
+        "taskCriticality": "0",
+        "taskDateTime": "2022-07-21T11:11",
+        "taskStatus": "0",
+        "taskAwaitingDateTime": "",
+        "taskDeadline": "2022-08-21T11:11"
+    },
+    {   
+        "UserId": "uid",
+        "id":"1",
+        "version": "0",
+        "lastUpdate": "2022-01-01T00:00",
+        "typeMessage": "1",
+        "statusMessage": "null",
+        "titleMessage": "Заголовок сообщения",
+        "bodyMessage": "Основной текст сообщения. Описание задачи/события и т.п.",
+        "taskCriticality": "0",
+        "taskDateTime": "2022-07-21T11:11",
+        "taskStatus": "3",
+        "taskAwaitingDateTime": "2022-08-21T11:11",
+        "taskDeadline": "2022-08-21T11:11"
+    }
+]

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS + JS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/messages.css">
+    <script defer src="./scripts/messages.js"></script>
+    <!-- <script defer src="./scripts/data.js"></script> -->
+    <!-- <script defer src="./scripts/simulation.js"></script> -->
+    <!-- <script defer src="./scripts/newMessage.js"></script> -->
+    <!-- <script defer src="./scripts/test.js"></script> -->
+    <title>test Messages</title>
+
+</head>
+<body>
+    <div class="page">
+        <main>
+            <h1>Тестовая страница для разработки получения уведомлений</h1>
+            <!-- <p>Уведомления показываются на странице и привязываются </p> -->
+            <!-- <input type="number" name="timeout" id="timeout" value="5" min="1" max="100"> -->
+            <h2>!!! Подвести курсор к правому краю и нажать кнопку</h2>
+            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sit, eligendi tenetur similique vero, possimus cum ab, iste necessitatibus maxime illum? Sed nesciunt optio praesentium excepturi laboriosam ab autem consequuntur.</p> -->
+
+            <!-- <h2>info: <output id="output">?????</output></h2> -->
+            <!-- <p>Последняя нажатая кнопка: <output id="last-btn"></output></p> -->
+        </main>
+<!-- 
+        <footer class="btn-group1 d-flex gap-2">
+          <button type="button" name="btn-show-messages" id="btn-show-messages" class="btn btn-primary" onclick="showMessages()">Показать уведомления</button>
+          <button type="button" name="btn-start-simulation" id="btn-start-simulation" class="btn btn-primary" onclick="startSimulation()">Начать симуляцию</button>
+          <button type="button" name="btn-start-push" id="btn-start-push" class="btn btn-primary">Start push</button>
+          <button type="button" name="btn-start-stop" id="btn-stop-push" class="btn btn-primary">Stop push</button>
+        </footer> -->
+    </div>
+
+    <!-- Сообщения -->
+    <section class="messages">
+        <div class="hover-target">
+        </div>
+        <button id="btn-show-board" class="btn btn-primary">
+            <picture>
+                <source srcset="./svg/chat_unread_white_48dp.svg" width="48" height="48">
+                <img src="./img/1x/chat_unread_white_48dp_x1.png" width="48" height="48" alt="Появились сообщения." />
+            </picture>
+        </button>
+        <div id="message-board" class="message-board message-board-hidden">
+
+            <!-- карточка уведомления -->
+            <div class="toast-message" id="task-id-" >
+                <header class="header tooltip" data-tooltip="id: ">
+                    <i class="type-message-icon">
+                        <picture>
+                            <source srcset="./svg/type=Default_24dp.svg">
+                            <img src="./img/1x/type=Default_24dp_x2.png" width="24" height="24" alt="Появились сообщения." />
+                        </picture>
+                    </i>
+                    <h2 class="title-message">Заголовок сообщения. $Краткое описание задачи. :-)</h2>
+                    <button class="btn btn-close" disabled>
+                        <picture>
+                            <source srcset="./svg/x-lg_14dp.svg">
+                            <img src="./img/2x/x-lg_14dp_x2.png" width="14" height="14" alt="Закрыть">
+                        </picture>
+                    </button>
+                </header>
+                <div class="dates">
+                    <!-- <div class="task-date-time">11 минут назад.</div> -->
+                    <div class="task-date-time">99:99 22.22.2099</div>
+                    <div class="next-date">Срок: 99:99 01.01.2099</div>
+                    <button type="button" class="suspend-task-toggle">
+                        <picture>
+                            <source srcset="./svg/pause-circle_24dp.svg">
+                            <img src="./img/1x/pause-circle_24dp_x1.png" alt="Закрыть">
+                        </picture>
+                    </button>
+                </div>
+                <div class="d-none over-deadline">
+                    <p>Внимание! Задача просрочена.</p>
+                </div>
+                <div class="d-none suspend-task-group">
+                    <input type="datetime-local" name="suspend-task" class="message-input suspend-task-input">
+                    <button type="button" class="btn btn-warning suspend-task-button">Отложить</button>
+                </div>
+                <div class="main-content">
+                    <div class="body-message">
+                        <p class="body-text">Не следует, однако, забывать, что высококачественный прототип будущего проекта способствует подготовке и реализации первоочередных требований. Имеется спорная точка зрения, гласящая примерно следующее</p>
+                    </div>
+                    <div class="criticaly">
+                        <i class="icon high tooltip1" data-tooltip="Высокий приоритет">
+                            <picture>
+                                <source srcset="./svg/criticaly_danger_24dp.svg">
+                                <img src="./img/1x/criticaly_danger_24dp_x1.png" alt="Высокий приоритет">
+                            </picture>
+                        </i>
+                        <i class="icon middle tooltip1" data-tooltip="Нормальный приоритет">
+                            <picture>
+                                <source srcset="./svg/criticaly_calendar-star_24dp.svg">
+                                <img src="./img/1x/criticaly_calendar-star_24dp_x1.png" alt="Нормальный приоритет">
+                            </picture>
+                        </i>
+                        <i class="icon low tooltip1 active" data-tooltip="Низкий приоритет">
+                            <picture>
+                                <source srcset="./svg/criticaly_info-circle_24dp.svg">
+                                <img src="./img/1x/criticaly_info-circle_24dp_x1.png" alt="Низкий приоритет">
+                            </picture>
+                        </i>
+                    </div>
+                </div>
+                <div class="task-status-bar">
+                    <button class="btn btn-secondary tooltip1 current-status" data-tooltip="Новая">Новая</button>
+                    <button class="btn btn-primary tooltip1" data-tooltip="В работе">В работе</button>
+                    <button class="btn btn-warning tooltip1" data-tooltip="Отложена">Отложена</button>
+                    <button class="btn btn-success tooltip1" data-tooltip="Завершена">Завершена</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
